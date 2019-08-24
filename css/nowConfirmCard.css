@@ -1,0 +1,91 @@
+.relative {
+	position: relative;
+}
+
+.absolute {
+	position: absolute;
+}
+
+a:hover {
+	color: red;
+}
+
+.ver_mid {
+	vertical-align: middle;
+}
+
+.container {
+	width: 1200px;
+	margin: 0 auto;
+}
+
+.top_nav {
+	padding: 10px 0;
+	font-size: 12px;
+	text-align: center;
+}
+
+.top_nav .left_nav a{
+	padding: 0 9px;
+	height: 20px;
+	line-height: 20px;
+	/* border-right: 1px solid gray; */
+	display: block;
+	float: left;
+	border-radius: 15px;
+}
+.top_nav .left_nav a:hover{
+	background: whitesmoke;
+}
+.top_nav .right_nav a {
+	padding: 0 9px;
+	height: 20px;
+	line-height: 20px;
+	border-right: 1px solid gray;
+	display: block;
+	float: left;
+	/* border-radius: 15px; */
+}
+.top_nav .right_nav a:hover{
+	background: whitesmoke;
+}
+.more_list{
+	background: white;
+	right: -20px;
+	bottom: -104px;
+	border-radius: 15px;
+	text-align: center;
+	/* box-shadow: 1px 0px 5px ; */
+	z-index: 20;
+	display: none;
+	background: whitesmoke;
+}
+.more_list li a{
+	width: 100px;
+	margin: 3px;
+}	
+.nav_more:hover{
+	background: whitesmoke;
+}
+.nav_more:hover .more_list{
+	display: block;
+}
+.header {
+	padding: 18px 0;
+}
+
+.header .logo {
+	width: 205px;
+	height: 40px;
+	background: url(../img/index/logo.png) no-repeat;
+	background-size: contain;
+}
+.header .confirmCard{
+	font-size: 20px;
+	color: #000000;
+	line-height: 40px;
+	margin-left: 30px;
+}
+.progressArea{
+	width: 320px;
+}
