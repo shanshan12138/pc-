@@ -1,3 +1,7 @@
+body {
+	background: whitesmoke;
+}
+
 .relative {
 	position: relative;
 }
@@ -25,7 +29,7 @@ a:hover {
 	text-align: center;
 }
 
-.top_nav .left_nav a{
+.top_nav .left_nav a {
 	padding: 0 9px;
 	height: 20px;
 	line-height: 20px;
@@ -34,9 +38,11 @@ a:hover {
 	float: left;
 	border-radius: 15px;
 }
-.top_nav .left_nav a:hover{
+
+.top_nav .left_nav a:hover {
 	background: whitesmoke;
 }
+
 .top_nav .right_nav a {
 	padding: 0 9px;
 	height: 20px;
@@ -46,10 +52,12 @@ a:hover {
 	float: left;
 	/* border-radius: 15px; */
 }
-.top_nav .right_nav a:hover{
+
+.top_nav .right_nav a:hover {
 	background: whitesmoke;
 }
-.more_list{
+
+.more_list {
 	background: white;
 	right: -20px;
 	bottom: -104px;
@@ -60,16 +68,24 @@ a:hover {
 	display: none;
 	background: whitesmoke;
 }
-.more_list li a{
+
+.more_list li a {
 	width: 100px;
 	margin: 3px;
-}	
-.nav_more:hover{
+}
+
+.nav_more:hover {
 	background: whitesmoke;
 }
-.nav_more:hover .more_list{
+
+.nav_more:hover .more_list {
 	display: block;
 }
+
+.outHeader {
+	background: white;
+}
+
 .header {
 	padding: 18px 0;
 }
@@ -80,12 +96,313 @@ a:hover {
 	background: url(../img/index/logo.png) no-repeat;
 	background-size: contain;
 }
-.header .confirmCard{
+
+.header .confirmCard {
 	font-size: 20px;
 	color: #000000;
 	line-height: 40px;
 	margin-left: 30px;
 }
-.progressArea{
+
+.progressArea img {
+	float: right;
 	width: 320px;
+}
+
+.address {
+	height: 190px;
+	padding: 16px 40px 16px 40px;
+	background: white;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.address_title {
+	height: 30px;
+	font-size: 18px;
+	color: #000000;
+	line-height: 30px;
+}
+
+.add_address {
+	width: 360px;
+	height: 120px;
+	border: 1px solid lightgray;
+	margin-top: 20px;
+	line-height: 120px;
+	color: #000000;
+	text-align: center;
+	font-size: 16px;
+}
+
+.goods {
+	padding: 40px;
+	background: white;
+}
+.goods_msg {
+	width: 750px;
+	font-size: 16px;
+	color: #000000;
+	padding: 20px;
+	border: 1px solid lightgray;
+}
+
+/* .goods_list{
+	padding-bottom: 20px;
+	border-bottom: 1px solid lightgray;
+} */
+.mate20rs_img {
+	width: 100px;
+	margin-right: 20px;
+}
+
+.mate20rs_msg {
+	width: 360px;
+	/* margin-left: 20px; */
+
+}
+
+.mate20rs_price,
+.mate20rs_num {
+	margin-left: 20px;
+	width: 100px;
+	text-align: center;
+}
+
+.mate20rs_extra {
+	margin-top: 20px;
+	height: 77px;
+}
+
+.mate20rs_extra ul {
+	border-top: 1px solid lightgray;
+	padding-top: 20px;
+}
+
+.mate20rs_extra .extra_title {
+	width: 100px;
+	text-align: center;
+	display: block;
+	line-height: 70px;
+	margin-right: 20px;
+	/* margin-left: 50px; */
+}
+
+.extra_msg {
+	width: 371px;
+	vertical-align: middle;
+}
+
+.extra_msg img {
+	vertical-align: top;
+	height: 36px;
+	/* display: block; */
+}
+
+.extra_price,
+.extra_num {
+	margin-left: 20px;
+	width: 100px;
+	text-align: center;
+}
+.mate20rs_invoice{
+	margin-top: 30px;
+}
+.mate20rs_invoice .invoice1{
+	width: 100px;
+	margin-left: 20px;
+	/* display: block; */
+}
+.mate20rs_invoice .invoice2{
+	margin-left: 0;
+}
+.mate20rs_invoice .invoice3{
+	margin-left: 120px;
+}
+.mate20rs_invoice .invoice3 a{
+	margin-left: 10px;
+}
+.mate20rs_discounts{
+	margin-top: 30px;
+}
+.mate20rs_discounts .discounts1{
+	width: 100px;
+	margin-left: 20px;
+}
+.mate20rs_discounts .discounts3,
+.mate20rs_discounts .discounts4,
+.mate20rs_discounts .discounts5
+{
+	margin-left: 120px;
+}
+.goods_settlement{
+	width: 407px;
+	height: 442px;
+	border: 1px solid lightgray;
+	border-left: 0;
+	background: whitesmoke;
+}
+.goods_settlement .settlement_title{
+	font-size: 20px;
+	padding: 20px;
+	margin-top: 10px;
+}
+.settlement{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	padding: 20px;
+	width: 250px;
+	/* height: 200px; */
+	font-size: 16px;
+	color: #000000;
+}
+.totalPrice_price {
+	width: 150px;
+	text-align: right;
+	/* display: block; */
+}
+.submit{
+	margin-top: 20px;
+	padding: 40px;
+	background: white;
+	text-align: right;
+	font-size: 16px;
+	color: #000000;
+}
+.submit_price{
+	margin-top: 8px;
+}
+.submit_address{
+	margin-top: 20px;
+}
+.submit_address .address_none{
+	/* width: 280px; */
+	padding: 0 20px;
+	height: 55px;
+	background: rgba(255,0,0,0.1);
+	text-align: center;
+	line-height: 55px;
+	border: 1px solid red;
+	color: red;
+}
+.submit_btn{
+	margin-top: 20px;
+}
+.submit_btn div{
+	width: 150px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	background: orangered;
+	color: white;
+}
+.footer{
+	background: whitesmoke;
+	width: 100%;
+}
+.footer_top{
+	font-size: 18px;
+	color: gray;
+	text-align: center;
+	line-height: 82px;
+	height: 82px;
+}
+.footer_top .top_item{
+	width: 300px;
+	font-weight: 400;
+}
+.footer_mid{
+	padding: 20px 0;
+	border-top: 1px solid lightgray;
+	border-bottom: 1px solid lightgray;
+	/* background: whitesmoke; */
+}
+.footer_mid .mid_left{
+	width: 920px;
+	height: 155px;
+	padding-bottom: 20px;
+}
+.mid_left ul li{
+	width: 150px;
+	float: left;
+}
+.mid_left ul li p{
+	font-size: 15px;
+	font-weight: 500;
+	margin-bottom: 8px;
+	color: gray;
+}
+.mid_left ul li a{
+	font-size: 13px;
+	display: block;
+}
+.mid_right{
+	text-align: center;
+	padding-left: 40px;
+}
+.footer_mid_tel{
+	font-weight: 600;
+	font-size: 20px;
+}
+.footer_mid_serve{
+	font-size: 15px;
+	margin-top: 10px;
+}
+.online_serve{
+	width: 170px;
+	height: 34px;
+	background: #000000;
+	border-radius: 15px;
+	margin: 0 auto;
+	line-height: 34px;
+	font-size: 15px;
+	color: white;
+	margin-top: 10px;
+	display: block;
+	color: white;
+}
+.online_serve:hover{
+	background: dimgray;
+	color: white;
+}
+.footer_mid .link_more{
+	font-size: 15px;
+	margin-top: 10px;
+}
+.footer_end{
+	padding: 30px 0;
+}
+.footer_end_left{
+	width: 82px;
+	height: 20px;
+}
+.footer_end_mid {
+	font-size: 13px;
+	margin-left: 20px;
+	width: 812px;
+}
+.footer_end_mid li{
+	font-size: 15px;
+	float: left;
+	padding: 0 5px;
+	border-right: 1px solid lightgray;
+	
+}
+.license{
+	width: 70px;
+	height: 24px;
+}
+.mark{
+	position: absolute;
+	top: 0;
+	left: 80px;
+	border-radius: 10px;
+	text-align: center;
+	color: white;
+	font-size: 15px;
+	padding: 3px;
+	width: 60px;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
 }
