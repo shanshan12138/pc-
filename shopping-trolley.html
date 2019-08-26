@@ -690,7 +690,7 @@
 									<li class="titleTab fl">智慧出行</li>
 									<li class="titleTab fl">健康运动</li>
 									<li class="titleTab fl">精致生活<li>
-										<div class="clear"></div>
+									<div class="clear"></div>
 								</ul>
 							</div>
 							<div class="bd">
@@ -1231,39 +1231,119 @@
 							</div>
 						</div>
 					</div>
-					<!-- 结算 -->
-					<div class="sc-total-fixed">
-						<div class="total-tool">
-							<div class="operate fl">
-								<label class="checkbottom fl">
-									<input class="icon cheack" id="checkAll" name="checkAllone" type="checkbox">全选
-								</label>
-								<a href="javascript:;" class="fl" id="deleteAll">删除</a>
-								<div class="clear"></div>
-							</div>
-
-							<a href="javascript:;" class="calculate fr">立即结算</a>
-							<div class="total-price fr">
-								<p>
-									<label>总计</label>
-									<span id="priceTotal"></span>
-									<em>
-										<b>不含运费</b>
-									</em>
-								</p>
-								<div class="total-choose" id="selected">已选择
-									<span id="selectedTotal"></span>件商品
-								</div>
-							</div>
+				</div>
+				
+				
+				<!-- 结算 -->
+				<div class="sc-total-fixed">
+					<div class="total-tool">
+						<div class="operate fl">
+							<label class="checkbottom fl">
+								<input class="icon cheack" id="checkAll" name="checkAllone" type="checkbox">全选
+							</label>
+							<a href="javascript:;" class="fl" id="deleteAll">删除</a>
 							<div class="clear"></div>
 						</div>
-					</div>
 
-					<div class="test">
-						测试footer
+						<a href="javascript:;" class="calculate fr">立即结算</a>
+						<div class="total-price fr">
+							<p>
+								<label>总计</label>
+								<span id="priceTotal"></span>
+								<em>
+									<b>不含运费</b>
+								</em>
+							</p>
+							<div class="total-choose" id="selected">已选择
+								<span id="selectedTotal"></span>件商品
+							</div>
+						</div>
+						<div class="clear"></div>
 					</div>
-
 				</div>
+
+				<!-- 购物车为空 -->
+				<div class="trolleyIsEmpty">
+					<div class="sc-empty">
+						<span class="minicart"></span>
+						<p>您的购物车里什么都没有哦~</p>
+						<a href="javascript:;">去逛逛</a>
+					</div>
+					<div class="conmmend">
+						<p class="title">热销推荐</p>
+						<div class="conmmend-pro">
+							<ul class="pro">
+								<li class="item fl">
+									<p class="p-img">
+										<a title="HUAWEI P30 Pro" target="_blank" href="#">
+											<img alt="HUAWEI P30 Pro" src="img/shopping-trolley/TrolleyIsEmpty/ia_004.png">
+										</a>
+									</p>
+									<p class="p-name">
+										<a  title="HUAWEI P30 Pro" target="_blank" href="#">HUAWEI P30 Pro</a>
+									</p>
+									<p class="p-price">¥&nbsp;4988</p>
+								</li>
+								
+								<li class="item fl">
+									<p class="p-img">
+										<a title="HUAWEI nova 5 Pro" target="_blank" href="#">
+											<img alt="HUAWEI nova 5 Pro" src="img/shopping-trolley/TrolleyIsEmpty/ia_005.png">
+										</a>
+									</p>
+									<p class="p-name">
+										<a  title="HUAWEI nova 5 Pro" target="_blank" href="#">HUAWEI nova 5 Pro</a>
+									</p>
+									<p class="p-price">¥&nbsp;2999</p>
+								</li>
+								
+								<li class="item fl">
+									<p class="p-img">
+										<a title="荣耀20" target="_blank" href="#">
+											<img alt="荣耀20" src="img/shopping-trolley/TrolleyIsEmpty/ia_006.png">
+										</a>
+									</p>
+									<p class="p-name">
+										<a  title="荣耀20" target="_blank" href="#">荣耀20</a>
+									</p>
+									<p class="p-price">¥&nbsp;2699</p>
+								</li>
+								
+								<li class="item fl">
+									<p class="p-img">
+										<a title="HUAWEI Mate 20 Pro" target="_blank" href="#">
+											<img alt="HUAWEI Mate 20 Pro" src="img/shopping-trolley/TrolleyIsEmpty/ia_007.png">
+										</a>
+									</p>
+									<p class="p-name">
+										<a  title="HUAWEI Mate 20 Pro" target="_blank" href="#">HUAWEI Mate 20 Pro</a>
+									</p>
+									<p class="p-price">¥&nbsp;4988</p>
+								</li>
+								
+								<li class="item fl">
+									<p class="p-img">
+										<a title="荣耀V20" target="_blank" href="#">
+											<img alt="荣耀V20" src="img/shopping-trolley/TrolleyIsEmpty/ia_008.png">
+										</a>
+									</p>
+									<p class="p-name">
+										<a  title="荣耀V20" target="_blank" href="#">荣耀V20</a>
+									</p>
+									<p class="p-price">¥&nbsp;4988</p>
+								</li>
+								
+								<div class="clear"></div>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="test">
+					测试footer
+				</div>
+
+
 			</div>
 
 		</div>
@@ -1273,33 +1353,74 @@
 		<script type="text/javascript">
 			var selectedTotal = document.getElementById('selectedTotal'); //已选商品数目容器
 			var priceTotal = document.getElementById('priceTotal'); //显示
-			
-			
-			var servicePrice = ($(".service .lit-sub").text())//服务费总计
-			var proPrice=($(".trolley-main .lit-sub").text());//商品总计
-			// proPrice=proPrice.slice(2);
-			console.log(proPrice);
-			// console.log(servicePrice);
-			
+			var servicePrice = ($(".service .lit-sub").text()) //服务费总计
+			var proPrice = ($(".trolley-main .lit-sub").text()); //商品总计
+
+			function sumPrice() {
+				var allprice = 0;
+				var allnum = 0;
+				$(".one").each(function() {
+					if ($(this).find("#product").prop('checked')) {
+						allprice += parseFloat($(this).find(".trolley-main").find(".lit-sub").html().slice(2));
+						allnum += parseInt($(this).find(".trolley-main").find(".p-text").val());
+
+					} else {
+						allprice += 0;
+						allnum += 0;
+					}
+				});
+				$("#priceTotal").html("￥" + allprice.toFixed(2));
+				$("#selectedTotal").html(allnum);
+			}
+			sumPrice();
+
+
+			//服务费和新增加的搭配的费用有bug
+			// function sumPrice() {
+			// 	var allprice = 0; //总价
+			// 	var allnum = 0; //总数量
+			// 	var proPrice = 0; //原来产品价格
+			// 	var pronum = 0 //原来产品数量
+			// 	var servicePrice = 0; //服务费
+			// 	var matchPrice = 0; //搭配产品价格
+			// 	var matchnum = 0; //搭配产品数量
+			// 	$(".one").each(function() {
+			// 		if ($(this).find("#product").prop('checked')) {
+			// 			proPrice += parseFloat($(this).find(".trolley-main").find(".lit-sub").html().slice(2));
+			// 			pronum += parseInt($(this).find(".trolley-main").find(".p-text").val());
+			// 
+			// 			servicePrice += parseFloat($(this).find(".service").find(".lit-sub").html().slice(2));
+			// 
+			// 			matchnum += parseInt($(this).find(".match").find(".p-text").val());
+			// 			// matchPrice += parseFloat($(this).find(".match").find(".lit-sub").html().slice(2));
+			// 
+			// 			allprice = proPrice + servicePrice;
+			// 			allnum = pronum + matchnum;
+			// 		} else {
+			// 			allprice += 0;
+			// 			allnum += 0;
+			// 		}
+			// 	});
+			// 	$("#priceTotal").html("￥" + allprice.toFixed(2));
+			// 	$("#selectedTotal").html(allnum);
+			// }
+
 			//购物车中原本的东西数量加1
-			
-			$(".add").click(function() {		
+			$(".add").click(function() {
 				//购买的数量
 				var number = $(this).parent('.btn').siblings(".p-text").val();
 				// console.log(number)
 				var $litSub = $(this).parents(".trolley-main").children('.lit-sub');
 				number++;
-				//物品的单价
 				var nuitPrice = $(this).parents('.lit-number').siblings('.lit-price').text();
 				nuitPrice = parseFloat(nuitPrice.slice(2))
 				//计算小计
 				price = number * nuitPrice;
-				
 				$(this).parents(".lit-number").siblings(".lit-sub").text(price);
 				// //保留小数点后两位
 				$litSub.text("￥ " + price.toFixed(2));
 				$(this).parents('.lit-number').children('.p-text').val(number);
-			
+
 				if (number > 1) {
 					$(this).siblings(".del").css("color", "#717171")
 					$(this).siblings(".del").css("cursor", "pointer")
@@ -1307,11 +1428,12 @@
 					$(this).siblings(".del").prop("readonly", "readonly")
 					$(this).siblings(".del").css("cursor", "not-allowed");
 				}
+				sumPrice();
 			})
-			
+			//购物车中原本的东西数量减1
 			$(".trolley-main .btn .del").click(function() {
 				var number = $(this).parent('.btn').siblings(".p-text").val();
-				
+
 				//小计
 				var $litSub = $(this).parents(".trolley-main").children('.lit-sub');
 				//单价
@@ -1331,36 +1453,8 @@
 					$(this).css("color", "#d6d6d6")
 					$(this).css("cursor", "not-allowed");
 				}
+				sumPrice()
 			})
-			// 更新总数和总价格，已选浮层
-			function sumPrice() {
-				var seleted = 0;
-				var price = 0;
-				var HTMLstr = '';
-				for (var i = 0, len = tr.length; i < len; i++) {
-					if (tr[i].getElementsByTagName('input')[0].checked) {
-						tr[i].className = 'on';
-						seleted += parseInt(tr[i].getElementsByTagName('input')[1].value);
-						price += parseFloat(tr[i].cells[4].innerHTML);
-						//新增的显示
-						HTMLstr += '<div><img src="' + tr[i].getElementsByTagName('img')[0].src + '"><span class="del" index="' + i +
-							'">取消选择</span></div>'
-					} else {
-						tr[i].className = '';
-					}
-				}
-				// 已选商品数
-				selectedTotal.innerHTML = seleted;
-				//合计价钱
-				priceTotal.innerHTML = price.toFixed(2);
-				selectedViewList.innerHTML = HTMLstr;
-			
-				if (seleted == 0) {
-					foot.className = 'foot';
-				}
-			}
-
-
 
 
 			// 选中按钮之后变色
@@ -1378,16 +1472,11 @@
 
 			})
 
-
 			// 第一个全选按钮
 			$("input[name=checkAll]").click(function() {
 				var status = $(this).prop('checked');
 				$("input[name=product]").prop('checked', status);
-				var total = $("input[name=product]").length;
-				selectedTotal.innerText = " " + total;
-				if(status==false){
-					selectedTotal.innerText = "0";
-				}
+				sumPrice();
 			})
 			$("input[name=product]").click(function() {
 				var total = $("input[name=product]").length;
@@ -1400,16 +1489,13 @@
 					$("#checkAll").prop('checked', false);
 					selectedTotal.innerText = " " + chkNum;
 				}
+				sumPrice();
 			})
 			// 第二个全选按钮
 			$("input[name=checkAllone]").click(function() {
 				var status = $(this).prop('checked');
 				$("input[name=product]").prop('checked', status);
-				var total = $("input[name=product]").length;
-				selectedTotal.innerText = " " + total;
-				if(status==false){
-					selectedTotal.innerText = "0";
-				}
+				
 			})
 			$("input[name=product]").click(function() {
 				var total = $("input[name=product]").length;
@@ -1429,17 +1515,13 @@
 			$("input[name=checkAllone]").click(function() {
 				var status = $(this).prop('checked');
 				$("input[name=checkAll]").prop('checked', status);
+				sumPrice();
 			})
 
 			$("input[name=checkAll]").click(function() {
 				var status = $(this).prop('checked');
 				$("input[name=checkAllone]").prop('checked', status);
 			})
-
-			// var txt= $(this).parents(".trolley-content").find(".one").eq(3).find(".selectedTotal").text();
-			// console.log(txt);
-
-
 
 
 			//计算总价Fixed
@@ -1465,13 +1547,11 @@
 				}
 			})
 
-
 			//tab选项卡
 			$(".nav .titleTab:first-child").css({
 				"border-bottom": "2px solid #ca141d",
 				color: "#ca141d"
 			})
-
 
 
 			//获取索引值 边框定位
@@ -1505,9 +1585,6 @@
 			})
 
 
-
-			
-
 			//删除搭配的内容
 			$('.pro-parts').on("click", ".lit-oper", function() {
 				var $self = $(this);
@@ -1520,20 +1597,35 @@
 					//取消
 					layer.msg("取消成功。")
 				})
+
 			})
+			
 			//删除商品及其搭配内容和推荐搭配 的全部内容
-			$('.content').on("click", ".delte", function() {
-				var $self = $(this);
-				//弹出confirm
+			
+			$('.trolley-content').on("click", ".delte", function() {
+				var $self = $(this);				
+				var flag =true;
 				layer.confirm("您确认要删除该商品吗？", function(index) {
-					$self.parents(".one").remove();
-					layer.close(index);
-					layer.msg("删除成功。")
+					if(flag){
+						$self.parents(".one").remove();
+					}
+					layer.close(index);					
+					sumPrice();
+					
+					var i=$(".one").length;
+					console.log(i)
+					if(i<=0){
+						$(".trolley-content .trolleyIsEmpty").show();
+					}
 				}, function() {
 					//取消
 					layer.msg("取消成功。")
 				})
+				
+				
+				
 			})
+
 			//添加的搭配内容 增加或者减少
 			$('.pro-parts').on("click", ".add", function() {
 				var matchNum = $(this).parent('.btn').siblings(".p-text").val();
@@ -1574,7 +1666,6 @@
 					$(this).css("cursor", "not-allowed");
 				}
 			})
-
 
 			//服务价格
 			var $check = $(".mouseover").find(".cheack-service");
@@ -1643,8 +1734,6 @@
 					$(this).prop('checked', flag);
 				}
 			})
-
-
 
 			//经典搭配
 			var index = 0;
