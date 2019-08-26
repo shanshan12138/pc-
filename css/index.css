@@ -154,7 +154,6 @@ a:hover {
 	background: url(../img/index/放大镜01.png) no-repeat;
 	background-size: cover;
 }
-
 .slideBox {
 	overflow: hidden;
 	position: relative;
@@ -214,7 +213,6 @@ a:hover {
 	background-position: top center;
 	/* background-size: contain; */
 }
-
 .slideBox .prev,
 .slideBox .next {
 	position: absolute;
@@ -256,7 +254,7 @@ a:hover {
 	/* border-radius: 15px; */
 	position: absolute;
 	top: 18px;
-	left: 120px;
+	left: 8%;
 	background: whitesmoke;
 
 }
