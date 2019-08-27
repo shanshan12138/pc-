@@ -743,7 +743,7 @@ a:hover {
 }
 .floorBox{
 	position: fixed;
-	right: 0;
+	right: -200px;
 	bottom: 300px;
 	text-align: right;
 }
@@ -751,7 +751,7 @@ a:hover {
 	height: 30px;
 	line-height: 30px;
 	cursor: pointer;
-	opacity: 0;
+	/* opacity: 0; */
 }
 
 
@@ -841,14 +841,13 @@ a:hover {
 .footer_end_mid {
 	font-size: 13px;
 	margin-left: 20px;
-	width: 812px;
+	width: 865px;
 }
 .footer_end_mid li{
 	font-size: 15px;
 	float: left;
 	padding: 0 5px;
 	border-right: 1px solid lightgray;
-	
 }
 .license{
 	width: 70px;
