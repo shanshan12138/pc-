@@ -12,6 +12,61 @@
 		<script type="text/javascript" src="js/jquery.jqzoom.js"></script>
 	</head>
 	<body>
+		<!-- 顶部nav -->
+		<div class="top_nav container clearfix">
+			<div class="left_nav fl relative">
+				<a href="">首页</a>
+				<a href="">华为官网</a>
+				<a href="">荣耀官网</a>
+				<a href="">花粉俱乐部</a>
+				<a href="">V码(优购码)</a>
+				<a href="">企业购</a>
+				<a href="">Select Region</a>
+				<span class="nav_more"><a href="">更多精彩 ∨</a>
+					<ul class="more_list absolute">
+						<li><a href="">EMUI</a></li>
+						<li><a href="">应用市场</a></li>
+						<li><a href="">华为终端云空间</a></li>
+						<li><a href="">开发者联盟</a></li>
+					</ul>
+				</span>
+
+			</div>
+			<div class="right_nav fr">
+				<a href="" style="border: 0;">请登录</a>
+				<a href="">注册</a>
+				<a href="">我的订单</a>
+				<a href="">客户服务</a>
+				<a href="">网站导航</a>
+				<a href="">手机版</a>
+				<a href="" style="border: 0;">
+					<img style="height: 16px; vertical-align: middle;" src="img/index/Shopping_Cart_32px_1178620_easyicon.net.png">
+					<span class="ver_mid"></span>购物车
+				</a>
+			</div>
+		</div>
+		<!-- Header -->
+		<div class="header clearfix container">
+			<div class="header_left fl clearfix">
+				<a href="" class="fl">
+					<div class="logo ver_mid"></div>
+				</a>
+				<div class="zone pink"><a href="" style="color: white;">华为专区</a></div>
+				<div class="zone sklBlue"><a href="" style="color: white;">荣耀专区</a></div>
+				<div class="zone"><a href="">华为5G</a></div>
+				<div class="zone"><a href="">荣耀20</a></div>
+				<div class="zone"><a href="">华为P30</a></div>
+				<div class="zone"><a href="">荣耀9X</a></div>
+			</div>
+			<div class="header_right fr">
+				<!-- 搜索框待定 -->
+				<form class="header_form clearfix relative">
+					<input class="fl " type="text" name="" id="search_box" value="" placeholder="HUAWEI P30" />
+					<span id="search_btn"></span>
+				</form>
+
+			</div>
+		</div>
 		<div class="container">
 			<!-- 导航栏 -->
 			<div class="nav">
@@ -26,9 +81,7 @@
 				<div class="right-extra fl">
 					<!--产品参数开始-->
 					<div class="box relative">
-						<div class="shortcut">
-
-						</div>
+						
 						<div id="preview" class="spec-preview"> <span class="jqzoom"><img class="test" jqimg="img-details/800_800_1539244238246mp.png"
 								 src="img-details/800_800_1539244238246mp.png" /></span>
 						</div>
@@ -114,8 +167,8 @@
 					</div>
 					<div>
 						<label class="matter">选择颜色</label>
-						<span class="pane"><img src="" alt="">玄黑</span>
-						<span class="gray"><img src="" alt="">瑞红</span>
+						<span id="select_black" class="pane"><img src="" alt="">玄黑</span>
+						<span id="select_red" class="gray"><img src="" alt="">瑞红</span>
 					</div>
 					<div>
 						<label class="matter">选择套餐</label>
@@ -123,20 +176,20 @@
 					</div>
 					<div>
 						<label class="matter">保障服务</label>
-						<span class="pane">华为无忧服务￥2199<img src="" alt=""></span>
-						<span class="gray">碎屏服务宝1年￥599<img src="" alt=""></span>
-						<span class="gray">延长服务宝1年￥568<img src="" alt=""></span>
+						<span id="2199" class="pane">华为无忧服务￥2199<img src="" alt=""></span>
+						<span id="599" class="gray">碎屏服务宝1年￥599<img src="" alt=""></span>
+						<span id="568" class="gray">延长服务宝1年￥568<img src="" alt=""></span>
 					</div>
 					<div>
 						<label class="matter">分期免息</label>
-						<span class="gray">掌声生活分期<img src="" alt=""></span>
-						<span class="gray">花呗分期<img src="" alt=""></span>
+						<span id="Handheldlife" class="gray">掌上生活分期<img src="" alt=""></span>
+						<span id="huabei" class="gray">花呗分期<img src="" alt=""></span>
 					</div>
 					<div>
 						<label class="matter">推&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;荐</label>
-						<span>HUAWEI Mate 20 Pro</span>
-						<span>HUAWEI Mate 20 X</span>
-						<span>HUAWEI Mate 20</span>
+						<a href="" id="mate20pro" style="cursor:  pointer;">HUAWEI Mate 20 Pro</a>
+						<a href="" id="mate20x" style="cursor:  pointer;">HUAWEI Mate 20 X</a>
+						<a href="" id="mate20" style="cursor:  pointer;">HUAWEI Mate 20</a>
 					</div>
 					<div>
 						<label class="matter">已选择商品</label>
@@ -235,19 +288,42 @@
 				<p><button class="minibuynow" type="button">立即下单</button></p>
 			</div>
 		</div>
-		<div class="container">
-			<div class="line"></div>
-			<!-- 页面中心导航 -->
-			<ul class="nav-center">
+
+
+		<!-- 页面中心导航 -->
+
+		<ul class="nav-center">
+			<a href="#fixed1">
 				<li class="fl">商品详情</li>
+			</a>
+			<a href="#fixed2">
 				<li class="fl">规格参数</li>
+			</a>
+			<a href="#fixed3">
 				<li class="fl">包装与售后</li>
+			</a>
+			<a href="#fixed4">
 				<li class="fl">用户评价(<span class="com-count">1</span>)</li>
+			</a></ul>
+		<div class="fixed_nav">
+			<ul class="nav_fixed">
+				<a href="#fixed1">
+					<li class="fl">商品详情</li>
+				</a>
+				<a href="#fixed2">
+					<li class="fl">规格参数</li>
+				</a>
+				<a href="#fixed3">
+					<li class="fl">包装与售后</li>
+				</a>
+				<a href="#fixed4">
+					<li class="fl">用户评价(<span class="com-count">1</span>)</li>
+				</a>
 			</ul>
 		</div>
 		<!-- 图片 -->
 		<div class="photo">
-			<div><img src="img-details/ia_100000054.jpg"></div>
+			<div id="fixed1"><img src="img-details/ia_100000054.jpg"></div>
 			<div><img src="img-details/ia_100000055.jpg"></div>
 			<div><img src="img-details/201810161159096944389.jpg"></div>
 			<div><img src="img-details/20181016115910212627.jpg" alt=""></div>
@@ -261,7 +337,7 @@
 		</div>
 		<div class="container">
 			<div class="services">
-				<div class="services-spec">
+				<div id="fixed2" class="services-spec">
 					<!-- 规格参数 -->
 					<div class=" services-title-before"></div>
 					<div class=" services-title">规格参数</div>
@@ -823,7 +899,7 @@
 						<div class="clear"></div>
 					</div>
 
-					<div class=" services-title-before"></div>
+					<div id="fixed3" class=" services-title-before"></div>
 					<div class=" services-title">包装</div>
 					<div>
 						<div class="after-sale">
@@ -952,7 +1028,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="bg-gray">
+		<div class="bg-gray" id="fixed4">
 			<div class="comment-title">
 				<label>好评度</label>
 				<span class="big100">
@@ -961,17 +1037,216 @@
 				</span>
 				<label>买家印象</label>
 			</div>
-			<div class="comment-content">
-				<img class="fl" src="img-details/ia_100000004.png" alt="">
-				<p class="fl">
-					<span class="star">★★★★★</span></br>
-					<span>支持华为手机的路上，一往无前。</span>
-				</p>
+
+		</div>
+		<div class="comment-content container">
+			<img class="fl" src="img-details/ia_100000004.png" alt="">
+			<p class="fl">
+				<span class="star">★★★★★</span></br>
+				<span>支持华为手机的路上，一往无前。</span>
+			</p>
+		</div>
+		<!-- 返回顶部 -->
+		<div class="returnTop">
+
+			<div class="shopLink" title="购物车">🛒</div>
+			<div class="serveLink" title="客服">🎧</div>
+			<div class="idea" title="意见反馈">📓</div>
+			<div class="return" title="返回顶部">👆</div>
+		</div>
+
+		<!-- 以下为footer -->
+		<div class="footer">
+			<div class="footer_top container clearfix">
+				<div class="top_item fl">
+					<a href="">
+						<span class="ver_mid">百强企业 品质保证</span>
+					</a>
+				</div>
+				<div class="top_item fl">
+					<a href="">
+						<span class="ver_mid">7天退货 15天换货</span>
+					</a>
+				</div>
+				<div class="top_item fl">
+					<a href="">
+						<span class="ver_mid">48元起免运费</span>
+					</a>
+				</div>
+				<div class="top_item fl">
+					<a href="">
+						<span class="ver_mid">1000家维修网点 全国联保</span>
+					</a>
+				</div>
+			</div>
+			<div class="footer_mid container clearfix">
+				<div class="mid_left fl">
+					<ul class="clearfix" style="border-right: 1px solid lightgray;">
+						<li>
+							<p>购物相关</p>
+							<a href="">购物指南</a>
+							<a href="">配送方式</a>
+							<a href="">支付方式</a>
+							<a href="">常见问题</a>
+						</li>
+						<li>
+							<p>保修与退换货</p>
+							<a href="">保修政策</a>
+							<a href="">退换货政策</a>
+							<a href="">退换货流程</a>
+							<a href="">保修状态查询</a>
+							<a href="">配件方位查询</a>
+						</li>
+						<li>
+							<p>维修与技术支持</p>
+							<a href="">售后网点</a>
+							<a href="">预约维修</a>
+							<a href="">手机寄修</a>
+							<a href="">备件价格查询</a>
+							<a href="">上门服务</a>
+						</li>
+						<li>
+							<p>特色服务</p>
+							<a href="">防伪查询</a>
+							<a href="">补够保障</a>
+							<a href="">以旧换新</a>
+							<a href="">礼包包装</a>
+						</li>
+						<li>
+							<p>关于我们</p>
+							<a href="">公司介绍</a>
+							<a href="">华为商城简介</a>
+							<a href="">华为线下门店</a>
+							<a href="">荣耀线下门店</a>
+							<a href="">诚征英才</a>
+							<a href="">意见反馈</a>
+						</li>
+						<li>
+							<p>友情连接</p>
+							<a href="">华为集团</a>
+							<a href="">华为CBG官网</a>
+							<a href="">荣耀官网</a>
+							<a href="">花粉俱乐部</a>
+							<a href="">华为云</a>
+						</li>
+					</ul>
+
+				</div>
+				<div class="mid_right fl">
+					<p class="footer_mid_tel">400-088-6888</p>
+					<p class="footer_mid_serve">7x24小时客服热线（仅收市话费）</p>
+					<a class="online_serve" href="">在线客服</a>
+					<div class="link_more">
+						<span>关注Vmall:</span>
+					</div>
+				</div>
+			</div>
+			<div class="footer_end container clearfix">
+				<img class="footer_end_left fl" src="img/index/footerk.png">
+				<div class="footer_end_mid fl">
+					<ul>
+						<li style="padding-left: 0;"><a href="">华为集团</a></li>
+						<li><a href="">华为CBG官网</a></li>
+						<li><a href="">荣耀官网</a></li>
+						<li><a href="">花粉俱乐部</a></li>
+						<li><a href="">华为应用市场</a></li>
+						<li><a href="">EMUI</a></li>
+						<li><a href="">华为终端云空间</a></li>
+						<li><a href="">开发者联盟</a></li>
+						<li><a href="">华为商城手机版</a></li>
+						<li style="border: none;"><a href="">网站导航</a></li>
+					</ul>
+					<br>
+					<a href="">隐私声明</a>
+					<a href="">服务协议</a>
+					Copyright © 2012-2019 华为终端有限公司 版权所有
+					<a href="">粤ICP备19015064号</a>
+					<a href="">粤公网安备 44190002003939号</a><br>
+					增值电信业务经营许可证：粤B2-20190762 <span> | </span> 备案主体编号：44201919072182
+
+				</div>
+				<a href="" class="license fr"><img src="img/index/隐私认证75.jpg"></a>
+				<a href="" class="license fr"><img class="license fr" src="img/index/电子营业执照360.png"></a>
 			</div>
 		</div>
 		<script src="js/jquery-3.4.1.min.js" type="text/javascript"></script>
 		<script type="text/javascript">
+			// 返回顶部
+			$(window).scroll(function() {
+				var top = $(this).scrollTop();
+				console.log(top)
+				if (top > 400) {
+					$(".return").stop(true).animate({
+						opacity: 1
+					});
 
+				} else {
+					$(".return").stop(true).animate({
+						opacity: 0
+					});
+				}
+				if (top > 2100) {
+					$(".floorBox").stop(true).animate({
+						right: "20px"
+					});
+				} else {
+					$(".floorBox").stop(true).animate({
+						right: "-200px"
+					});
+				}
+				if (top > 969) {
+					$(".fixed_nav").css("display", "block")
+				} else {
+					$(".fixed_nav").css("display", "none")
+				}
+			})
+			console.log($(".nav_fixed li").eq(1)[0])
+			$(".return").click(function() {
+				$("html,body").animate({
+					scrollTop: 0
+				});
+			});
+			$("#select_black").click(function() {
+				$(this).css("border-color", "red")
+				$("#select_red").css("border-color", "black")
+				$(".spec-scroll .items ul li").eq(0).html("<img alt='华为' bimg='img-details/black1.png' src='img-details/black1.png' onmousemove='preview(this);'>")
+				$(".spec-scroll .items ul li").eq(1).html("<img alt='华为' bimg='img-details/black2.png' src='img-details/black2.png' onmousemove='preview(this);'>")
+				$(".spec-scroll .items ul li").eq(2).html("<img alt='华为' bimg='img-details/black3.png' src='img-details/black3.png' onmousemove='preview(this);'>")
+				$(".spec-scroll .items ul li").eq(3).html("<img alt='华为' bimg='img-details/black4.png' src='img-details/black4.png' onmousemove='preview(this);'>")
+				$(".spec-scroll .items ul li").eq(4).html("<img alt='华为' bimg='img-details/black5.png' src='img-details/black5.png' onmousemove='preview(this);'>")
+				
+			})
+			$("#select_red").click(function() {
+				$(this).css("border-color", "red")
+				$("#select_black").css("border-color", "black")
+				$(".spec-scroll .items ul li").eq(0).html("<img alt='华为' bimg='img-details/red1.png' src='img-details/red1.png' onmousemove='preview(this);'>")
+				$(".spec-scroll .items ul li").eq(1).html("<img alt='华为' bimg='img-details/red2.png' src='img-details/red2.png' onmousemove='preview(this);'>")
+				$(".spec-scroll .items ul li").eq(2).html("<img alt='华为' bimg='img-details/red3.png' src='img-details/red3.png' onmousemove='preview(this);'>")
+				$(".spec-scroll .items ul li").eq(3).html("<img alt='华为' bimg='img-details/red4.png' src='img-details/red4.png' onmousemove='preview(this);'>")
+				$(".spec-scroll .items ul li").eq(4).html("<img alt='华为' bimg='img-details/red5.png' src='img-details/red5.png' onmousemove='preview(this);'>")
+				
+			})
+			$("#2199").click(function() {
+				$(this).css("border-color", "red")
+				$(this).siblings().css("border-color", "black")
+			})
+			$("#599").click(function() {
+				$(this).css("border-color", "red")
+				$(this).siblings().css("border-color", "black")
+			})
+			$("#568").click(function() {
+				$(this).css("border-color", "red")
+				$(this).siblings().css("border-color", "black")
+			})
+			$("#huabei").click(function() {
+				$(this).css("border-color", "red")
+				$(this).siblings().css("border-color", "black")
+			})
+			$("#Handheldlife").click(function() {
+				$(this).css("border-color", "red")
+				$(this).siblings().css("border-color", "black")
+			})
+			
 		</script>
 	</body>
 </html>
