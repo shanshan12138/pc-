@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/login.css" />
+		<title></title>
+	</head>
+	<body>
+		<div class="header">
+			<div class="header_box">
+				<img class="ver_mid" src="img/login/ia_100000001.png">
+				<span class="ver_mid">华为商城</span>
+			</div>
+		</div>
+		<p class="law">
+			<img class="ver_mid" style="height: 15px;" src="img/login/ia_100000003.png">
+			<span class="ver_mid">依据《网络安全法》，为保障您的帐号安全与正常使用，请尽快绑定您的手机号，感谢您的理解及支持！</span>
+		</p>
+		<div class="banner">
+			<div class="banner_inner container clearfix">
+				<div class="login_box fr ">
+					<div class="login_title clearfix">
+						<div class="login_leftTitle fl">
+							账号登录
+						</div>
+						<div class="login_rightTitle fl">
+							扫码登录
+						</div>
+					</div>
+					<form id="login_form" action="" method="" class="clearfix">
+						<p class="tips"> </p>
+						<input type="text" name="" id="userName" value="" placeholder="手机/邮箱/华为账号" />
+						<input type="password" name="" id="passWord" value="" placeholder="密码" />
+						<div class="SMS_login">
+							<img class="ver_mid" src="img/login/ia_100000005.png">
+							<span class="ver_mid">短信验证码登录</span>
+						</div>
+						<div class="login_btn">
+							登录
+						</div>
+						<div class="Remember clearfix">
+
+							<label class="Remember_left fl" title="在公用电脑上不要选用此项">
+								<input class="ver_mid" type="checkbox" name="" id="RememberPassWord" value="" />
+								<span class="ver_mid">记住华为账号</span>
+							</label>
+
+							<a class="Remember_right fr">
+								更多
+							</a>
+						</div>
+						<div class="login_more">
+							<div class="register fl">
+								<a href="">注册账号</a>
+							</div>
+							<div class="returnPwd fl">
+								<a href="">找回密码</a>
+							</div>
+						</div>
+						<div class="otherWays clearfix">
+							<p>其他方式登录</p>
+							<div id="qq" class="icon icon_qq fl">
+							</div>
+							<div id="aliPay" class="icon icon_aliPay fl">
+							</div>
+							<div id="weChat" class="icon icon_weChat fl">
+							</div>
+						</div>
+					</form>
+					<div class="login_code relative">
+						<div class="code absolute">
+							<img src="img/login/code.png">
+						</div>
+						<div class="code_ways absolute">
+							<img src="img/login/ia_100000013.png">
+						</div>
+						<p class="code_msg absolute">
+							使用<span style="color: #007AFF;">华为移动服务APP</span>扫一扫
+							<br>
+							若您使用华为手机，请进入“设置”>“华为帐号”扫码登录。
+						</p>
+						<p></p>
+					</div>
+
+
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<p>
+				<a href="">华为帐号与云空间用户协议</a>
+				<a href="">关于华为帐号与云空间隐私的声明</a>
+				<a href="">常见问题</a>
+				<a href="" style="border: none;">Cookies</a>
+			</p>
+			<p>
+				Copyright © 2011-2019 华为软件技术有限公司 版权所有 保留一切权利 苏B2-20070200号 | 苏ICP备09062682号-9
+			</p>
+		</div>
+		<script src="js/jquery-3.4.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			
+			$(".login_leftTitle").click(function () {
+				$("#login_form").css("display","block")
+				$(".login_code").css("display","none")
+				$(this).css("color","red")
+				$(this).siblings().css("color","black")
+				
+			})
+			$(".login_rightTitle").click(function () {
+				$(".login_code").css("display","block")
+				$("#login_form").css("display","none")
+				$(this).css("color","red")
+				$(this).siblings().css("color","black")
+			})
+			$(".code").mouseenter(function () {
+				$(this).stop(true).animate({
+					left:"40px"
+				},function () {
+					$(".code_ways").stop(true).animate({
+						opacity:1
+					});
+				});
+			})
+			$(".code").mouseleave(function () {
+				$(".code_ways").stop(true).animate({
+					opacity:0
+				})
+				$(this).stop(true).delay(500).animate({
+					left:"115px"
+				})
+			})
+			$(".login_btn").click(function () {
+				if( $("#userName").val() == "" ){
+					$(".tips").text("请输入账号！")
+					return;
+				}
+				if( $("#passWord").val() == "" ){
+					$(".tips").text("请输入密码！")
+					return;
+				}
+			})
+		</script>
+	</body>
+</html>

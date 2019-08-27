@@ -1628,7 +1628,7 @@
 		// 返回顶部
 		$(window).scroll(function() {
 			var top = $(this).scrollTop();
-			console.log(top)
+			// console.log(top)
 			if (top > 400) {
 				$(".return").stop(true).animate({
 					opacity: 1
@@ -1640,12 +1640,18 @@
 				});
 			}
 			if (top > 2100) {
+				$(".floorBox").stop(true).animate({
+					right:"20px"
+				});
 				$(".floorBox .item").stop(true).animate({
 					opacity: 1
 				});
 			} else {
 				$(".floorBox .item").stop(true).animate({
 					opacity: 0
+				});
+				$(".floorBox").stop(true).animate({
+					right:"0px"
 				});
 			}
 
