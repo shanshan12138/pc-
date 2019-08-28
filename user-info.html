@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="css/account-center.css" />
+
+	</head>
+	<body>
+		<div class="topbar">
+			<div class="topbar-content">
+				<div class="right fl">
+					<div class="childLogo">
+						<img class="fl" src="img/account-center/ia_100000000.png">
+						<span class="short fl">|</span>
+						<span class="text-1 fl">账户中心</span>
+						<div class="clear"></div>
+					</div>
+				</div>
+
+				<div class="right fr">
+					<div class="head fl">
+						<img src="img/account-center/ia_100000001.jpg">
+					</div>
+					<span class="name fl">三岁就可傲了</span>
+					<span class="short fl">|</span>
+					<a class="exit fl" href="#">退出</a>
+				</div>
+
+				<div class="clear"></div>
+			</div>
+		</div>
+
+		<div class="account-container">
+			<div class="menu">
+				<ul class="nav fr">
+					<li class="data-menu1 fl">
+						<a href="account-center.html" ">账户与安全</a>
+					</li>
+			
+					<li class="data-menu1 fl">
+						<a href="user-info.html" style="color: rgb(0, 125, 255);" >个人信息</a>
+					</li>
+			
+					<li class="data-menu1 fl">
+						<a href="vmall-service.html">华为服务</a>
+					</li>
+			
+					<li class="data-menu1 fl">
+						<a href="security-center.html">安全中心</a>
+					</li>
+			
+					<li class="data-menu1 fl">
+						<a href="setting.html">设置</a>
+					</li>
+					<div class="clear"></div>
+			
+				</ul>
+				<div class="clear"></div>
+			</div>
+
+
+			<div class="infos-content">
+				<div class="upic">
+					<a href="#" id="uploadImg"><img id="headPic" src="img/account-center/ia_100000001.jpg"></a>
+					<p id="uploadImgDiv">编辑头像</p>
+				</div>
+
+				<div class="umsg">
+					<p class="title">公开信息</p>
+					<p class="line">
+						<a id="nickNameLink" href="#" class="more">编辑</a>
+						昵称：
+						<span class="uinfo"><label id="nickname" class="space-pre">三岁就可傲了</label></span>
+					</p>
+					<p class="line">
+						<a id="loginIDLink" href="#" class="more" style="display: block;">编辑</a>
+						华为号：
+						<span class="uinfo"><label id="loginID" class="space-pre">hw_008615689933381_01</label></span>
+					</p>
+
+
+
+					<p class="line">
+						<a id="genderLink" href="#" class="more">选择</a>
+						性别：
+						<span class="uinfo"><label id="gender">女</label></span>
+					</p>
+
+
+					<p class="line">
+						<a id="cityLink" href="#" class="more">选择</a>
+						地区：
+						<span class="uinfo"><label id="cityarea">选择地区</label></span>
+					</p>
+
+					<p class="title">非公开信息</p>
+
+
+					<div class="line member_name">
+						姓名：
+						<span><label id="memberName">珊珊</label></span>
+						<a id="memberNameLink" href="#" class="more">编辑</a>
+					</div>
+
+
+
+					<div class="line birthday_set_guide">
+						生日：
+						<span><label id="birthday">未设置</label></span>
+						<a id="birthdayLink" href="#" class="more">编辑</a>
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+
+		<!-- 底部 -->
+		<div class="wp ft">
+			<p>
+				<a href="#" class="rule" target="_blank">华为帐号用户协议</a>
+				<em class="foot_em">|</em>
+				<a href="#" class="rule" target="_blank">关于华为帐号与云空间隐私的声明</a>
+				<em class="foot_em">|</em>
+				<a href="#" class="ifaq" target="_blank">常见问题</a>
+				<em class="foot_em">|</em>
+				<a href="#" class="rule" target="_blank">Cookies</a>
+			</p>
+			<p>Copyright © 2011-2019 华为技术有限公司 版权所有 保留一切权利&nbsp;&nbsp;苏B2-20070200号 | 苏ICP备09062682号-9</p>
+			<p></p>
+		</div>
+
+	</body>
+
+	<script type="text/javascript" src="js/jquery-3.4.1.min.js">
+
+	</script>
+	<script src="lib/layer/layer.js"></script>
+	<script src="lib/pcasclass/PCASClass.js"></script>
+	<script>
+		new PCAS("P2", "C2", "河北省");
+	</script>
+
+	<script>
+		// 生日
+		$("#birthdayLink").click(function() {
+			layer.open({
+				type: 1,
+				title: ['生日', 'text-align: center;font-size: 18px;color: #333;padding: 20px 40px;'],
+				skin: 'borderclass', //加上边框
+				area: ['440px', '320px'], //宽高
+				btn: ['确定', '取消'], //按钮
+				content: `
+					<div class="CPM-location">
+						<div>
+							<select class="province" name="P2">年</select><br>
+							<select class="city" name="C2">月</select><br>
+							<select class="city" name="C2">日</select>
+						</div>
+					</div>
+				`
+			});
+		})
+		$(".data-menu1 a").click(function() {
+			$(this).css("color", "#007dff")
+			$(this).parent().siblings().children().css("color", "#333")
+		})
+		// 昵称
+		$("#nickNameLink").click(function() {
+			layer.open({
+				type: 1,
+				title: ['昵称', 'text-align: center;font-size: 18px;color: #333;padding: 20px 40px;'],
+				skin: 'borderclass', //加上边框
+				area: ['440px', '220px'], //宽高
+				btn: ['确定', '取消'], //按钮
+
+				content: `
+					<div class="test" >
+						<div style="height: 15px;"></div>
+						<div class="message" style="padding: 0 16px;border-radius: 22px;min-height: 30px;background-color: #efefef;">
+							<input placeholder="三岁就可傲了" style="margin-right: 6px;height: 40px;overflow: hidden;width: 80%;border: 0;background-color: transparent;outline: 0;padding: 0;" type="tel" placeholder="" />
+						</div>
+						<div style="text-align: center; margin:0px auto;" ><div style="height: 15px; width: 100%;"></div>
+						</div>
+					</div>
+				`
+			});
+		})
+
+		//华为号
+		$("#loginIDLink").click(function() {
+			layer.open({
+				type: 1,
+				title: ['华为号', 'text-align: center;font-size: 18px;color: #333;padding: 20px 40px;'],
+				skin: 'borderclass', //加上边框
+				area: ['440px', '250px'], //宽高
+				btn: ['确定', '取消'], //按钮
+				content: `
+					<div class="test" >
+						<div style="height: 15px;"></div>
+						<p>华为号用于登录，只能设置一次。</p>
+						<div class="message" style="padding: 0 16px;border-radius: 22px;min-height: 40px;background-color: #efefef;">
+							<input class="" placeholder=" hw_008615689933381_01" style="margin-right: 6px;height: 40px;overflow: hidden;width: 80%;border: 0;background-color: transparent;outline: 0;padding: 0;" type="tel" placeholder="" />
+						</div>
+						<div style="text-align: center; margin:0px auto;" ><div style="height: 15px; width: 100%;"></div>
+						</div>
+						
+					</div>
+				`
+			});
+		})
+		// 性别
+		$("#genderLink").click(function() {
+			layer.open({
+				type: 1,
+				title: ['性别', 'text-align: center;font-size: 18px;color: #333;padding: 20px 40px;'],
+				skin: 'borderclass', //加上边框
+				area: ['440px', '280px'], //宽高
+				btn: ['确定', '取消'], //按钮
+				content: `
+					<div class="gender">
+						<p class="sex">
+							<span>男</span>
+							 <input type="radio" name="sex" value="1" />
+						</p>
+						<p class="sex">
+							<span>女</span>
+							<input type="radio" name="sex" value="0" checked />
+						</p>	
+					</div>
+				`
+			});
+		})
+
+		// 城市
+		$("#cityLink").click(function() {
+			layer.open({
+				type: 1,
+				title: ['性别', 'text-align: center;font-size: 18px;color: #333;padding: 20px 40px;'],
+				skin: 'borderclass', //加上边框
+				area: ['440px', '280px'], //宽高
+				btn: ['确定', '取消'], //按钮
+				content: `
+					<div class="CPM-location">
+						<div>
+							<select class="province" name="P2">北京</select><br>
+							<select class="city" name="C2">昌平</select>
+						</div>
+					</div>
+				`
+			});
+		})
+
+		//姓名
+		$("#memberNameLink").click(function() {
+			layer.open({
+				type: 1,
+				title: ['姓名', 'text-align: center;font-size: 18px;color: #333;padding: 20px 40px;'],
+				skin: 'borderclass', //加上边框
+				area: ['440px', '250px'], //宽高
+				btn: ['确定', '取消'], //按钮
+				content: `
+					<div class="test" >
+						<div style="height: 15px;"></div>
+						<p>设置姓名后，家人和朋友更容易记住您。</p>
+						<div class="message" style="padding: 0 16px;border-radius: 22px;min-height: 40px;background-color: #efefef;">
+							<input class="" style="margin-right: 6px;height: 40px;overflow: hidden;width: 80%;border: 0;background-color: transparent;outline: 0;padding: 0;" type="tel" placeholder="珊珊" />
+						</div>
+						<div style="text-align: center; margin:0px auto;" ><div style="height: 15px; width: 100%;"></div>
+						</div>
+						
+					</div>
+				`
+			});
+		})
+	</script>
+	</body>
+</html>
