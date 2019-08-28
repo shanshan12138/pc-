@@ -52,13 +52,29 @@
 
 			</div>
 		</div>
-		<div class="address container clearfix">
+		<div class="address container clearfix ">
 			<p class="address_title">收货地址</p>
-			<a href="">
-				<div class="add_address fl">
-					➕ 新增收货地址
-				</div>
-			</a>
+			<div class="address1 fl relative">
+				<p class="address1_name clearfix">
+					<span class="fl" style="text-align: left; margin-left: 20px;">CXK</span>
+					<span class="fr" style="text-align: right; margin-right: 20px;">13165423518</span>
+				</p>
+				<p class="address1_msg">
+					山东省 青岛市 城阳区 青岛农业大学 西苑校区
+				</p>
+				<span id="first_address" class="absolute">
+					默认地址
+				</span>
+				<span id="edit_address" class="absolute">
+					💻编辑
+				</span>
+				<span id="del_address" class="absolute">
+					🗑删除
+				</span>
+			</div>
+			<div class="add_address fl">
+				➕ 新增收货地址
+			</div>
 		</div>
 		<div class="goods container clearfix">
 			<div class="goods_msg fl">
@@ -152,9 +168,12 @@
 				<div class="address_none fr">
 					无收货地址，不可下单<a href="" style="margin-left: 10px;">点击填充</a>
 				</div>
+				<div class="confirm_address fr">
+					配送至:<span>山东省 青岛市 城阳区 青岛农业大学 西苑校区</span>
+				</div>
 			</div>
 			<div class="submit_btn clearfix">
-				<a href="">
+				<a href="http://127.0.0.1:8848/vmall.com/payment.html">
 					<div class="fr">
 						提交订单
 					</div>
@@ -274,9 +293,48 @@
 				<a href="" class="license fr"><img class="license fr" src="img/index/电子营业执照360.png"></a>
 			</div>
 		</div>
+		<!-- 添加地址 -->
+		<div class="address_bg">
+			<div class="address_box clearfix">
+				<form class="clearfix" method="">
+					<label class="fl"><span>收货人：</span><input type="text" name="" id="" value="" /></label>
+					<label class="fl"><span>手机号码：</span><input type="text" name="" id="" value="" placeholder="请输入11为手机号码" /></label>
+					<label class="fl"><span>收货地址：</span><input type="text" name="" id="" value="" placeholder="请输入省/市/区/街道" /></label>
+				</form>
+				<div class="address_box_return fl">
+					取消
+				</div>
+				<div class="address_box_enter fl">
+					保存并使用
+				</div>
+			</div>
+		</div>
 		<script src="js/jquery-3.4.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="lib/layer/layer.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
+			$(".address").on("click","#del_address",function () {
+				$(this).parent().css("display", "none")
+			})
+			$(".add_address").click(function() {
 
+				$(".address_box").css("display", "block")
+			})
+			$(".address_box_return").click(function() {
+				$(".address_box").css("display", "none")
+			})
+			$(".address_box_enter").click(function() {
+				if ($(".address_box label input")  == "" ) {
+					alert("输入不能为空")
+				} else {
+					var $newAddress = $('<div class="address1 fl relative"><p class="address1_name clearfix"><span class="fl" style="text-align: left; margin-left: 20px;">cxk</span><span class="fr" style="text-align: right; margin-right: 20px;">13165423518</span></p><p class="address1_msg">山东省 青岛市 城阳区 青岛农业大学 西苑校区</p><span id="edit_address" class="absolute">💻编辑</span><span id="del_address" class="absolute">🗑删除</span></div>')
+					$($newAddress).insertBefore(".add_address")
+				}
+				$(".address_box").css("display", "none")
+			})
+			$(".address").on("click",".address1",function () {
+				$(this).css("border-color","red")
+				$(this).siblings().css("border-color","black")
+			})
 		</script>
 	</body>
 </html>

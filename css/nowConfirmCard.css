@@ -123,17 +123,151 @@ a:hover {
 	color: #000000;
 	line-height: 30px;
 }
-
+.address1{
+	width: 360px;
+	height: 120px;
+	border: 2px solid black;
+	margin-top: 20px;
+	cursor: pointer;
+	margin-left: 20px;
+	
+}
+.address1:hover #edit_address,
+.address1:hover #del_address{
+	display: block;
+}
+.address1_name{
+	font-size: 16px;
+	color: #000000;
+	margin-top: 20px;
+	margin-right: 20px;
+}
+.address1_name span{
+	display: inline-block;
+}
+.address1_msg{
+	font-size: 15px;
+	margin: 20px 0 0 20px;
+}
+#first_address{
+	top: 0;
+	left: 0px;
+	height: 20px;
+	width: 60px;
+	line-height: 20px;
+	padding-left: 10px;
+	font-size: 12px;
+	color: white;
+	display: inline-block;
+	background: darkgray;
+}
+#edit_address{
+	bottom: 0;
+	right: 70px;
+	width: 60px;
+	height: 20px;
+	line-height: 10px;
+	font-size: 15px;
+	padding-left: 10px;
+	color: red;
+	display: inline-block;
+	/* border: 1px solid black; */
+	display: none;
+}
+#del_address{
+	bottom: 0;
+	right: 0px;
+	width: 60px;
+	height: 20px;
+	line-height: 10px;
+	font-size: 15px;
+	padding-left: 10px;
+	color: red;
+	display: inline-block;
+	/* border: 1px solid black; */
+	display: none;
+}
 .add_address {
 	width: 360px;
 	height: 120px;
-	border: 1px solid lightgray;
+	border: 2px solid black;
 	margin-top: 20px;
 	line-height: 120px;
 	color: #000000;
 	text-align: center;
 	font-size: 16px;
+	cursor: pointer;
+	margin-left: 20px;
+	/* display: none; */
 }
+/* 以下为添加地址框 */
+.address_box{
+	position: fixed;
+	top: 23%;
+	left: 27%;
+	margin: auto;
+	width: 550px;
+	height: 200px;
+	background: lightgray;
+	padding: 80px;
+	color: #000000;
+	padding-top: 30px;
+	display: none;
+}
+.address_box label{
+	margin-bottom: 20px;
+}
+.address_box label input{
+	width: 350px;
+	height: 40px;
+	line-height: 50px;
+	outline: none;
+	border: 1px solid lightgray;
+	padding: 0px 10px;
+	font-size: 14px;
+}
+.address_box label input:hover{
+	border-color: black;
+}
+.address_box label span{
+	width: 100px;
+	height: 50px;
+	line-height: 50px;
+	display: inline-block;
+	font-size: 16px;
+}
+.address_box_return{
+	width: 130px;
+	height: 30px;
+	border: 1px solid lightgray;
+	font-size: 18px;
+	color: #000000;
+	text-align: center;
+	line-height: 30px;
+	cursor: pointer;
+	margin-left: 100px;
+	background: white;
+	border: 1px solid red;
+}
+.address_box_enter{
+	width: 130px;
+	height: 30px;
+	border: 1px solid lightgray;
+	font-size: 18px;
+	color: #000000;
+	text-align: center;
+	line-height: 30px;
+	cursor: pointer;
+	margin-left: 50px;
+	background: darkred;
+	color: white;
+}
+#layui-layer1{
+	width: 710px;!important
+	left: 300px;!important
+}
+/* 以上为添加地址框 */
+
 
 .goods {
 	padding: 40px;
@@ -285,6 +419,16 @@ a:hover {
 	line-height: 55px;
 	border: 1px solid red;
 	color: red;
+	display: none;
+}
+.confirm_address{
+	padding: 0 20px 0 20px;
+	height: 55px;
+	text-align: center;
+	line-height: 55px;
+	background: rgba(255,0,0,0.1);
+	border: 1px solid red;
+	color: black;
 }
 .submit_btn{
 	margin-top: 20px;
