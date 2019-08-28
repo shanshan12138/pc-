@@ -1,3 +1,113 @@
+/* 以下为footer */
+.footer{
+	background: whitesmoke;
+	width: 100%;
+}
+.footer_top{
+	font-size: 18px;
+	color: gray;
+	text-align: center;
+	line-height: 82px;
+	height: 82px;
+}
+.footer_top .top_item{
+	width: 300px;
+	font-weight: 400;
+}
+.footer_mid{
+	padding: 20px 0;
+	border-top: 1px solid lightgray;
+	border-bottom: 1px solid lightgray;
+	/* background: whitesmoke; */
+}
+.footer_mid .mid_left{
+	width: 920px;
+	height: 155px;
+	padding-bottom: 20px;
+}
+.mid_left ul li{
+	width: 150px;
+	float: left;
+}
+.mid_left ul li p{
+	font-size: 15px;
+	font-weight: 500;
+	margin-bottom: 8px;
+	color: gray;
+}
+.mid_left ul li a{
+	font-size: 13px;
+	display: block;
+}
+.mid_right{
+	text-align: center;
+	padding-left: 40px;
+}
+.footer_mid_tel{
+	font-weight: 600;
+	font-size: 20px;
+}
+.footer_mid_serve{
+	font-size: 15px;
+	margin-top: 10px;
+}
+.online_serve{
+	width: 170px;
+	height: 34px;
+	background: #000000;
+	border-radius: 15px;
+	margin: 0 auto;
+	line-height: 34px;
+	font-size: 15px;
+	color: white;
+	margin-top: 10px;
+	display: block;
+	color: white;
+}
+.online_serve:hover{
+	background: dimgray;
+	color: white;
+}
+.footer_mid .link_more{
+	font-size: 15px;
+	margin-top: 10px;
+}
+.footer_end{
+	padding: 30px 0;
+}
+.footer_end_left{
+	width: 82px;
+	height: 20px;
+}
+.footer_end_mid {
+	font-size: 13px;
+	margin-left: 20px;
+	width: 865px;
+}
+.footer_end_mid li{
+	font-size: 15px;
+	float: left;
+	padding: 0 5px;
+	border-right: 1px solid lightgray;
+}
+.license{
+	width: 70px;
+	height: 24px;
+}
+.mark{
+	position: absolute;
+	top: 0;
+	left: 80px;
+	border-radius: 10px;
+	text-align: center;
+	color: white;
+	font-size: 15px;
+	padding: 3px;
+	width: 60px;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0;
+}
+/****************************/
 body {
 	background: #f5f5f5;
 }
