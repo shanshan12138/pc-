@@ -284,6 +284,7 @@ a:hover {
 }
 
 .category_item .item_tab {
+	margin-top: 3px;
 	padding-bottom: 7px;
 	/* display: block; */
 }
@@ -307,14 +308,15 @@ a:hover {
 	display: none;
 }
 
-.shop_item {
+.shop_item{
 	float: left;
-	width: 160px;
+	width: 180px;
 	height: 45px;
 	padding: 15px 10px 18px 10px;
 	border-radius: 15px;
 	line-height: 45px;
 	margin: 10px;
+	cursor: pointer;
 	/* background: #000000; */
 
 }
@@ -324,33 +326,33 @@ a:hover {
 }
 
 .shop_item span {
-	margin-left: 20px;
+	margin-left: 15px;
 }
 
 .innerBox1 {
-	width: 500px;
+	width: 600px;
 
 }
 
 .innerBox2 {
-	width: 200px;
+	width: 300px;
 }
 
 .innerBox3 {
-	width: 200px;
+	width: 300px;
 }
 
 .innerBox4 {
-	width: 800px;
+	width: 900px;
 }
 
 .innerBox5 {
-	width: 800px;
+	width: 900px;
 	/* display: block; */
 }
 
 .innerBox6 {
-	width: 200px;
+	width: 250px;
 }
 
 .menu_floor {
@@ -387,7 +389,7 @@ a:hover {
 }
 
 .menu_userTitle {
-	margin-bottom: 5px;
+	margin-bottom: 11px;
 }
 
 .menu_userGift {
@@ -478,13 +480,13 @@ a:hover {
 
 .menu_More {
 	/* width: 200px; */
-	padding: 3px 0 0 10px;
+	padding: 9px 0 0 10px;
 	display: block;
 	border-left: 1px solid lightgray;
 }
 
 .menu_More .more_item {
-	width: 70px;
+	width: 75px;
 	height: 22px;
 	display: block;
 	margin-left: 5px;
@@ -676,19 +678,19 @@ a:hover {
 .phones_title {
 	font-size: 14px;
 	color: #000000;
-	/* margin-top: 5px; */
+	margin-top: 5px;
 }
 
 .phones_msg {
 	font-size: 12px;
 	color: #000000;
-	/* margin-top: 5px; */
+	margin-top: 5px;
 }
 
 .phones_price {
 	color: red;
 	font-size: 14px;
-	/* margin-top: 5px; */
+	margin-top: 5px;
 }
 .tel_extra img{
 	width: 230px;
