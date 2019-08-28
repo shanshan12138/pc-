@@ -110,46 +110,55 @@ a:hover {
 }
 
 .address {
-	height: 190px;
-	padding: 16px 40px 16px 40px;
+	/* height: 190px; */
 	background: white;
 	margin-top: 20px;
 	margin-bottom: 20px;
+	padding-bottom: 30px;
 }
 
 .address_title {
+	padding-left: 25px;
+	padding-top: 20px;
 	height: 30px;
 	font-size: 18px;
-	color: #000000;
+	color: gray;
 	line-height: 30px;
 }
-.address1{
+
+.address1 {
+	
 	width: 360px;
 	height: 120px;
-	border: 2px solid black;
+	border: 2px solid darkred;
 	margin-top: 20px;
 	cursor: pointer;
-	margin-left: 20px;
-	
+	margin-left: 25px;
+
 }
-.address1:hover #edit_address,
-.address1:hover #del_address{
+
+.address1:hover .edit_address,
+.address1:hover .del_address {
 	display: block;
 }
-.address1_name{
+
+.address1_name {
 	font-size: 16px;
-	color: #000000;
+	color: gray;
 	margin-top: 20px;
 	margin-right: 20px;
 }
-.address1_name span{
+
+.address1_name span {
 	display: inline-block;
 }
-.address1_msg{
+
+.address1_msg {
 	font-size: 15px;
 	margin: 20px 0 0 20px;
 }
-#first_address{
+
+.first_address {
 	top: 0;
 	left: 0px;
 	height: 20px;
@@ -161,7 +170,8 @@ a:hover {
 	display: inline-block;
 	background: darkgray;
 }
-#edit_address{
+
+.edit_address {
 	bottom: 0;
 	right: 70px;
 	width: 60px;
@@ -174,7 +184,8 @@ a:hover {
 	/* border: 1px solid black; */
 	display: none;
 }
-#del_address{
+
+.del_address {
 	bottom: 0;
 	right: 0px;
 	width: 60px;
@@ -187,38 +198,56 @@ a:hover {
 	/* border: 1px solid black; */
 	display: none;
 }
+
 .add_address {
 	width: 360px;
 	height: 120px;
-	border: 2px solid black;
+	border: 2px solid lightgray;
 	margin-top: 20px;
 	line-height: 120px;
 	color: #000000;
 	text-align: center;
 	font-size: 16px;
 	cursor: pointer;
-	margin-left: 20px;
+	margin-left: 25px;
 	/* display: none; */
 }
+
 /* 以下为添加地址框 */
-.address_box{
+.bg_address1{ 
+  width:100%; 
+  height:200%; 
+  filter:alpha(opacity=50); 
+  -moz-opacity:0.5; 
+  /* opacity:0.5; */
+  background: rgba(0,0,0,0.5);
+  position:absolute; 
+  left:0px; 
+  top:0px; 
+  display:none;
+  z-index:100; 
+ } 
+.address_box {
 	position: fixed;
-	top: 23%;
-	left: 27%;
+	top: 20%;
+	left: 21%;
 	margin: auto;
-	width: 550px;
-	height: 200px;
-	background: lightgray;
-	padding: 80px;
+	width: 750px;
+	height: 390px;
+	background: white;
+	padding: 53px;
 	color: #000000;
 	padding-top: 30px;
-	display: none;
+	z-index: 10000;
+	border-radius: 20px;
 }
-.address_box label{
+
+.address_box label {
 	margin-bottom: 20px;
 }
-.address_box label input{
-	width: 350px;
+
+.address_box label input {
+	width: 600px;
 	height: 40px;
 	line-height: 50px;
 	outline: none;
@@ -226,57 +255,102 @@ a:hover {
 	padding: 0px 10px;
 	font-size: 14px;
 }
-.address_box label input:hover{
+
+.address_box label input:hover {
 	border-color: black;
 }
-.address_box label span{
+
+.address_box label span {
 	width: 100px;
 	height: 50px;
 	line-height: 50px;
 	display: inline-block;
 	font-size: 16px;
 }
-.address_box_return{
-	width: 130px;
-	height: 30px;
-	border: 1px solid lightgray;
+
+.address_box_return {
+	width: 150px;
+	height: 40px;
 	font-size: 18px;
 	color: #000000;
 	text-align: center;
-	line-height: 30px;
+	line-height: 40px;
 	cursor: pointer;
-	margin-left: 100px;
+	margin-left: 200px;
 	background: white;
 	border: 1px solid red;
+	margin-top: 30px;
 }
-.address_box_enter{
-	width: 130px;
-	height: 30px;
+
+.address_box_enter {
+	width: 150px;
+	height: 40px;
 	border: 1px solid lightgray;
 	font-size: 18px;
 	color: #000000;
 	text-align: center;
-	line-height: 30px;
+	line-height: 40px;
 	cursor: pointer;
 	margin-left: 50px;
 	background: darkred;
 	color: white;
+	margin-top: 30px;
 }
-#layui-layer1{
-	width: 710px;!important
-	left: 300px;!important
+.address_box_title {
+	text-align: center;
+	font-size: 18px;
+	width: 100%;
+	margin-bottom: 20px;
 }
-/* 以上为添加地址框 */
 
+.info {
+	font-size: 13px;
+	width: 600px;
+	margin-left: 100px;
+	padding: 10px;
+	outline: none;
+	border: 1px solid lightgray;
+}
 
+.info:hover {
+	border-color: #000000;
+}
+
+.address_box_del {
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	right: 10px;
+	top: 10px;
+	line-height: 40px;
+	text-align: center;
+	font-size: 30px;
+	cursor: pointer;
+}
+
+/* 修改地址 */
+.bg_address2{ 
+  width:100%; 
+  height:200%; 
+  filter:alpha(opacity=50); 
+  -moz-opacity:0.5; 
+  /* opacity:0.5; */
+  background: rgba(0,0,0,0.5);
+  position:absolute; 
+  left:0px; 
+  top:0px; 
+  display:none;
+  z-index:100; 
+ } 
 .goods {
-	padding: 40px;
 	background: white;
+	padding: 40px 0;
 }
+
 .goods_msg {
+	margin-left: 25px;
 	width: 750px;
 	font-size: 16px;
-	color: #000000;
 	padding: 20px;
 	border: 1px solid lightgray;
 }
@@ -339,49 +413,72 @@ a:hover {
 	width: 100px;
 	text-align: center;
 }
-.mate20rs_invoice{
+
+.mate20rs_invoice {
 	margin-top: 30px;
 }
-.mate20rs_invoice .invoice1{
+
+.mate20rs_invoice .invoice1 {
 	width: 100px;
 	margin-left: 20px;
 	/* display: block; */
 }
-.mate20rs_invoice .invoice2{
+
+.mate20rs_invoice .invoice2 {
 	margin-left: 0;
+	font-size: 12px;
 }
-.mate20rs_invoice .invoice3{
+
+.mate20rs_invoice .invoice3 {
 	margin-left: 120px;
+	font-size: 13px;
+	color: #000000;
 }
-.mate20rs_invoice .invoice3 a{
+
+.mate20rs_invoice .invoice3 a {
 	margin-left: 10px;
 }
-.mate20rs_discounts{
+
+.mate20rs_discounts {
 	margin-top: 30px;
 }
-.mate20rs_discounts .discounts1{
+
+.mate20rs_discounts .discounts1 {
 	width: 100px;
 	margin-left: 20px;
+	
 }
-.mate20rs_discounts .discounts3,
-.mate20rs_discounts .discounts4,
-.mate20rs_discounts .discounts5
-{
+.mate20rs_discounts .discounts2{
+	font-size: 12px;
+	margin-top: 5px;
+}
+.mate20rs_discounts .discounts3{
 	margin-left: 120px;
+	margin-top: 5px;
 }
-.goods_settlement{
-	width: 407px;
-	height: 442px;
+.mate20rs_discounts .discounts4,
+.mate20rs_discounts .discounts5 {
+	margin-left: 120px;
+	margin-top: 5px;
+	font-size: 12px;
+}
+
+.goods_settlement {
+	margin-right: 25px;
+	width: 357px;
+	height: 463px;
 	border: 1px solid lightgray;
 	border-left: 0;
 	background: whitesmoke;
 }
-.goods_settlement .settlement_title{
+
+.goods_settlement .settlement_title {
 	font-size: 20px;
 	padding: 20px;
 	margin-top: 10px;
 }
-.settlement{
+
+.settlement {
 	position: absolute;
 	bottom: 0;
 	right: 0;
@@ -391,49 +488,66 @@ a:hover {
 	font-size: 16px;
 	color: #000000;
 }
+.totalPrice{
+	margin-top: 5px;
+}
 .totalPrice_price {
 	width: 150px;
 	text-align: right;
 	/* display: block; */
 }
-.submit{
+
+.submit {
+	padding: 30px 0;
 	margin-top: 20px;
-	padding: 40px;
 	background: white;
 	text-align: right;
 	font-size: 16px;
 	color: #000000;
+	margin-bottom: 50px;
 }
-.submit_price{
-	margin-top: 8px;
+
+.submit_price {
+	margin-top: 10px;
+	margin-right: 25px;
 }
-.submit_address{
+.available{
+	margin-right: 25px;
+}
+.submit_address {
 	margin-top: 20px;
+	margin-right: 25px;
 }
-.submit_address .address_none{
+
+.submit_address .address_none {
 	/* width: 280px; */
 	padding: 0 20px;
 	height: 55px;
-	background: rgba(255,0,0,0.1);
+	background: rgba(255, 0, 0, 0.1);
 	text-align: center;
 	line-height: 55px;
 	border: 1px solid red;
 	color: red;
+	margin-right: 25px;
 	display: none;
 }
-.confirm_address{
+
+.confirm_address {
 	padding: 0 20px 0 20px;
 	height: 55px;
 	text-align: center;
 	line-height: 55px;
-	background: rgba(255,0,0,0.1);
+	background: rgba(255, 0, 0, 0.1);
 	border: 1px solid red;
 	color: black;
 }
-.submit_btn{
+
+.submit_btn {
 	margin-top: 20px;
+	margin-right: 25px;
 }
-.submit_btn div{
+
+.submit_btn div {
 	width: 150px;
 	height: 50px;
 	line-height: 50px;
@@ -441,59 +555,71 @@ a:hover {
 	background: orangered;
 	color: white;
 }
-.footer{
+
+.footer {
 	background: whitesmoke;
 	width: 100%;
 }
-.footer_top{
+
+.footer_top {
 	font-size: 18px;
 	color: gray;
 	text-align: center;
 	line-height: 82px;
 	height: 82px;
 }
-.footer_top .top_item{
+
+.footer_top .top_item {
 	width: 300px;
 	font-weight: 400;
 }
-.footer_mid{
+
+.footer_mid {
 	padding: 20px 0;
 	border-top: 1px solid lightgray;
 	border-bottom: 1px solid lightgray;
 	/* background: whitesmoke; */
 }
-.footer_mid .mid_left{
+
+.footer_mid .mid_left {
 	width: 920px;
 	height: 155px;
 	padding-bottom: 20px;
 }
-.mid_left ul li{
+
+.mid_left ul li {
 	width: 150px;
 	float: left;
 }
-.mid_left ul li p{
+
+.mid_left ul li p {
 	font-size: 15px;
 	font-weight: 500;
 	margin-bottom: 8px;
 	color: gray;
 }
-.mid_left ul li a{
+
+.mid_left ul li a {
 	font-size: 13px;
 	display: block;
 }
-.mid_right{
+
+.mid_right {
 	text-align: center;
 	padding-left: 40px;
 }
-.footer_mid_tel{
+
+.footer_mid_tel {
 	font-weight: 600;
 	font-size: 20px;
 }
-.footer_mid_serve{
+
+.footer_mid_serve {
 	font-size: 15px;
 	margin-top: 10px;
 }
-.online_serve{
+
+.online_serve {
 	width: 170px;
 	height: 34px;
 	background: #000000;
@@ -506,38 +632,46 @@ a:hover {
 	display: block;
 	color: white;
 }
-.online_serve:hover{
+
+.online_serve:hover {
 	background: dimgray;
 	color: white;
 }
-.footer_mid .link_more{
+
+.footer_mid .link_more {
 	font-size: 15px;
 	margin-top: 10px;
 }
-.footer_end{
+
+.footer_end {
 	padding: 30px 0;
 }
-.footer_end_left{
+
+.footer_end_left {
 	width: 82px;
 	height: 20px;
 }
+
 .footer_end_mid {
 	font-size: 13px;
 	margin-left: 20px;
 	width: 812px;
 }
-.footer_end_mid li{
+
+.footer_end_mid li {
 	font-size: 15px;
 	float: left;
 	padding: 0 5px;
 	border-right: 1px solid lightgray;
-	
+
 }
-.license{
+
+.license {
 	width: 70px;
 	height: 24px;
 }
-.mark{
+
+.mark {
 	position: absolute;
 	top: 0;
 	left: 80px;

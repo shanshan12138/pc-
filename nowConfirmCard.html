@@ -10,7 +10,7 @@
 		<!-- 顶部nav -->
 		<div class="top_nav container clearfix">
 			<div class="left_nav fl relative">
-				<a href="">首页</a>
+				<a href="index.html">首页</a>
 				<a href="">华为官网</a>
 				<a href="">荣耀官网</a>
 				<a href="">花粉俱乐部</a>
@@ -28,13 +28,13 @@
 
 			</div>
 			<div class="right_nav fr">
-				<a href="" style="border: 0;">请登录</a>
-				<a href="">注册</a>
-				<a href="">我的订单</a>
+				<a href="login.html" style="border: 0;">请登录</a>
+				<a href="register.html">注册</a>
+				<a href="member-my-order.html">我的订单</a>
 				<a href="">客户服务</a>
-				<a href="">网站导航</a>
+				<a href="index.html">网站导航</a>
 				<a href="">手机版</a>
-				<a href="" style="border: 0;">
+				<a href="shopping-trolley.html" style="border: 0;">
 					<img style="height: 16px; vertical-align: middle;" src="img/index/Shopping_Cart_32px_1178620_easyicon.net.png">
 					<span class="ver_mid"></span>购物车
 				</a>
@@ -42,7 +42,7 @@
 		</div>
 		<div class="outHeader">
 			<div class="header container clearfix">
-				<a href="http://127.0.0.1:8848/vmall.com/index.html">
+				<a href="index.html">
 					<div class="logo fl ver_mid"></div>
 				</a>
 				<p class="confirmCard ver_mid fl">确认订单</p>
@@ -56,19 +56,19 @@
 			<p class="address_title">收货地址</p>
 			<div class="address1 fl relative">
 				<p class="address1_name clearfix">
-					<span class="fl" style="text-align: left; margin-left: 20px;">CXK</span>
-					<span class="fr" style="text-align: right; margin-right: 20px;">13165423518</span>
+					<span class="address1_name_name fl" style="text-align: left; margin-left: 20px;">CXK</span>
+					<span class="address1_name_tel fr" style="text-align: right; margin-right: 20px;">13165423518</span>
 				</p>
 				<p class="address1_msg">
 					山东省 青岛市 城阳区 青岛农业大学 西苑校区
 				</p>
-				<span id="first_address" class="absolute">
+				<span class="first_address absolute">
 					默认地址
 				</span>
-				<span id="edit_address" class="absolute">
+				<span class="edit_address absolute">
 					💻编辑
 				</span>
-				<span id="del_address" class="absolute">
+				<span class="del_address absolute">
 					🗑删除
 				</span>
 			</div>
@@ -120,7 +120,7 @@
 							<div class="discounts3"><img class="ver_mid" src="./img/nowConfirmCard/discount_02.png"><a href="" class="ver_mid"
 								 style="margin-left: 20px;">使用优惠券</a></div>
 							<div class="discounts4">
-								<input type="checkbox" name="" id="" value="" />
+								<input type="checkbox" style="width: 15px;height: 15px;" name="" id="" value="" />
 								<span>共<span>0</span>积分，不足100不可使用</span>
 								<a href="">积分规则</a>
 							</div>
@@ -136,7 +136,7 @@
 
 			</div>
 			<div class="goods_settlement fr relative">
-				<p class="settlement_title">商品有<span style="color: red;">华为商城</span>选择合作快递</p>
+				<p class="settlement_title">商品由<span style="color: red;">华为商城</span>选择合作快递</p>
 				<div class="settlement">
 					<div class="totalPrice clearfix">
 						<span class="totalPrice_title">商品总金额:</span>
@@ -294,12 +294,17 @@
 			</div>
 		</div>
 		<!-- 添加地址 -->
-		<div class="address_bg">
+		<div class="bg_address1">
 			<div class="address_box clearfix">
 				<form class="clearfix" method="">
+					<p class="address_box_title">--添加地址--</p>
 					<label class="fl"><span>收货人：</span><input type="text" name="" id="" value="" /></label>
-					<label class="fl"><span>手机号码：</span><input type="text" name="" id="" value="" placeholder="请输入11为手机号码" /></label>
+					<label class="fl"><span>手机号码：</span><input type="text" name="" id="" value="" placeholder="请输入11位手机号码" /></label>
 					<label class="fl"><span>收货地址：</span><input type="text" name="" id="" value="" placeholder="请输入省/市/区/街道" /></label>
+					<label>
+						<textarea class="info" rows="3" cols="30" placeholder="如选择不到您的地区,请在此处详细说明"></textarea>
+						<small></small>
+					</label>
 				</form>
 				<div class="address_box_return fl">
 					取消
@@ -307,33 +312,93 @@
 				<div class="address_box_enter fl">
 					保存并使用
 				</div>
+				<div class="address_box_del">
+					X
+				</div>
+			</div>
+		</div>
+		<!-- 修改地址 -->
+		<div class="bg_address2">
+			<div class="address_box clearfix">
+				<form class="clearfix" method="">
+					<p class="address_box_title">--修改地址--</p>
+					<label class="fl"><span>收货人：</span><input type="text" name="" class="address_name" value="" /></label>
+					<label class="fl"><span>手机号码：</span><input type="text" name="" class="address_tel" value="" /></label>
+					<label class="fl"><span>收货地址：</span><input type="text" name="" class="address_msg" value="" /></label>
+					<label>
+						<textarea class="info" rows="3" cols="30" placeholder="如选择不到您的地区,请在此处详细说明"></textarea>
+						<small></small>
+					</label>
+				</form>
+				<div class="address_box_return fl">
+					取消
+				</div>
+				<div class="address_box_enter fl">
+					保存并使用
+				</div>
+				<div class="address_box_del">
+					X
+				</div>
 			</div>
 		</div>
 		<script src="js/jquery-3.4.1.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="lib/layer/layer.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
-			$(".address").on("click","#del_address",function () {
+			$(".address").on("click", ".del_address", function() {
 				$(this).parent().css("display", "none")
 			})
 			$(".add_address").click(function() {
 
-				$(".address_box").css("display", "block")
+				$(".bg_address1").css("display", "block")
 			})
 			$(".address_box_return").click(function() {
-				$(".address_box").css("display", "none")
+				$(this).parent().parent().css("display", "none")
 			})
-			$(".address_box_enter").click(function() {
-				if ($(".address_box label input")  == "" ) {
+			$(".address_box_del").click(function() {
+				$(this).parent().parent().css("display", "none")
+			})
+			$(".bg_address1 .address_box_enter").click(function() {
+				if ($(".address_box label input") == "") {
 					alert("输入不能为空")
 				} else {
-					var $newAddress = $('<div class="address1 fl relative"><p class="address1_name clearfix"><span class="fl" style="text-align: left; margin-left: 20px;">cxk</span><span class="fr" style="text-align: right; margin-right: 20px;">13165423518</span></p><p class="address1_msg">山东省 青岛市 城阳区 青岛农业大学 西苑校区</p><span id="edit_address" class="absolute">💻编辑</span><span id="del_address" class="absolute">🗑删除</span></div>')
+					var $newAddress = $(
+						'<div class="address1 fl relative"><p class="address1_name clearfix"><span class="address1_name1 fl" style="text-align: left; margin-left: 20px;">cxk</span><span class="address1_name2 fr" style="text-align: right; margin-right: 20px;">13165423518</span></p><p class="address1_msg">山东省 青岛市 城阳区 青岛农业大学 西苑校区</p><span class="edit_address absolute">💻编辑</span><span class="del_address absolute">🗑删除</span></div>'
+					)
+					var newName = $(".bg_address1 .address_name").val()
+					var newTel = $(".bg_address1 .address_tel").val()
+					var newAddress = $(".bg_address1 .address_msg").val()
+					$(".address1").find(".address1_name_name").text(newName)
+					$(".address1").find(".address1_name_tel").text(newTel)
+					$(".address1").find(".address1_msg").text(newAddress)
 					$($newAddress).insertBefore(".add_address")
 				}
-				$(".address_box").css("display", "none")
+				$(".bg_address1").css("display", "none")
 			})
-			$(".address").on("click",".address1",function () {
-				$(this).css("border-color","red")
-				$(this).siblings().css("border-color","black")
+			$(".address").on("click", ".address1", function() {
+				$(this).css("border-color", "darkred")
+				$(this).siblings().css("border-color", "lightgray")
+			})
+			$(".address1").on("click", ".edit_address", function() {
+				$(".bg_address2").css("display","block")
+				var name = $(this).siblings(".address1_name").children(".address1_name_name").text()
+				var tel =  $(this).siblings(".address1_name").children(".address1_name_tel").text()
+				var address =  $(this).siblings(".address1_msg").text()
+				$(".bg_address2 .address_name").val(name)
+				$(".bg_address2 .address_tel").val(tel)
+				$(".bg_address2 .address_msg").val(address)
+			})
+			$(".bg_address2 .address_box_enter").click(function() {
+				if ($(".address_box label input") == "") {
+					alert("输入不能为空")
+				} else {
+					var newName = $(".bg_address2 .address_name").val()
+					var newTel = $(".bg_address2 .address_tel").val()
+					var newAddress = $(".bg_address2 .address_msg").val()
+					$(".address1").find(".address1_name_name").text(newName)
+					$(".address1").find(".address1_name_tel").text(newTel)
+					$(".address1").find(".address1_msg").text(newAddress)
+				}
+				$(".bg_address2").css("display", "none")
 			})
 		</script>
 	</body>

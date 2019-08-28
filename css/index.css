@@ -584,15 +584,12 @@ a:hover {
 .swiper-slide {
 	text-align: center;
 	font-size: 18px;
-	/* border: 1px solid lightgray; */
-	/* Center slide text vertically */
 	border-radius: 15px;
 	text-align: center;
-	transition: 0.7s;
-	
+	transition: all 0.7s;
 }
 .swiper-slide:hover{
-	box-shadow: 5px 5px 11px gray;
+	background: rgba(0,0,0,0.1);
 }
 .swiper_TopTitle {
 	font-size: 26px;
