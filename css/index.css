@@ -575,7 +575,7 @@ a:hover {
 }
 
 .swiper-container {
-	width: 1200px;
+	width: 1210px;
 	height: 300px;
 }
 
@@ -586,9 +586,12 @@ a:hover {
 	/* Center slide text vertically */
 	border-radius: 15px;
 	text-align: center;
-	box-shadow: 0px 0px 8px lightgray;
+	transition: 0.7s;
+	
 }
-
+.swiper-slide:hover{
+	box-shadow: 5px 5px 11px gray;
+}
 .swiper_TopTitle {
 	font-size: 26px;
 	padding: 27px 0 13px 0;
@@ -659,10 +662,11 @@ a:hover {
 	margin-bottom: 10px;
 	padding: 35px;
 	padding-bottom: 0;
+	transition:all 0.6s;
 }
 .tel_list li:hover {
-	box-shadow: 0 5px 8px lightgray;
-	transition: 0.5s;
+	box-shadow: 0 5px 8px gray;
+	
 }
 .tel_list li img {
 	width: 150px;
@@ -739,7 +743,7 @@ a:hover {
 }
 .floorBox{
 	position: fixed;
-	right: 20px;
+	right: -200px;
 	bottom: 300px;
 	text-align: right;
 }
@@ -747,7 +751,7 @@ a:hover {
 	height: 30px;
 	line-height: 30px;
 	cursor: pointer;
-	opacity: 0;
+	/* opacity: 0; */
 }
 
 
@@ -837,14 +841,13 @@ a:hover {
 .footer_end_mid {
 	font-size: 13px;
 	margin-left: 20px;
-	width: 812px;
+	width: 865px;
 }
 .footer_end_mid li{
 	font-size: 15px;
 	float: left;
 	padding: 0 5px;
 	border-right: 1px solid lightgray;
-	
 }
 .license{
 	width: 70px;
