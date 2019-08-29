@@ -11,9 +11,9 @@
 		<!-- top -->
 		<div class="top">
 			<div class="top-center">
-				<a href="http://127.0.0.1:8848/vmall.com/index.html"><img class="vertical" src="img-register/head-top.png" alt=""></a>
+				<a href="index.html"><img class="vertical" src="img-register/head-top.png" alt=""></a>
 				<b class="vertical">|</b>
-				<a href="http://127.0.0.1:8848/vmall.com/index.html" style="color: white;"><span class="vertical">华为商城</span></a>
+				<a href="index.html" style="color: white;"><span class="vertical">华为商城</span></a>
 			</div>
 		</div>
 		<div class="container">
@@ -21,17 +21,24 @@
 			<div class="body">
 				<ul class="title">
 					<li class="phone relative fl"><i class="phone-icon"></i><span>手机号</span></li>
-					<div class="login fr"><span>已有华为账号</span><a class="login-a" href="http://127.0.0.1:8848/vmall.com/login.html">登录></a></div>
+					<div class="login fr"><span>已有华为账号</span><a class="login-a" href="login.html">登录></a></div>
 					<div class="clear"></div>
 				</ul>
 
 				<div class="select">
 					<li>
 						<label class="input-left"><span>国 家 / 地 区</span></label>
-						<input style="width: 270px; outline: none;" type="text" name="" id="" value="" />
+						<!-- <input style="width: 270px; outline: none;" type="text" name="" id="" value="" /> -->
+						<select name="" style="width: 270px; outline: none;height: 89%; background: #f7f7f7; border: none;">
+							<option value="">中国</option>
+							<option value="">美国</option>
+							<option value="">英国</option>
+							<option value="">法国</option>
+							<option value="">俄罗斯</option>
+						</select>
 					</li>
 					<li class="padding-bottom">
-						<label class="input-left"><span class="vertical">+86(中国)</span></label>
+						<label class="input-left"><span class="vertical" id="tel_prefix">+86(中国)</span></label>
 						<input style="width: 270px; outline: none;" type="text" placeholder="请输入手机号">
 					</li>
 					<li class="verify">
