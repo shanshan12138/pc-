@@ -356,15 +356,17 @@
 					alert("输入不能为空")
 				} else {
 					var $newAddress = $(
-						'<div class="address1 fl relative"><p class="address1_name clearfix"><span class="address1_name1 fl" style="text-align: left; margin-left: 20px;">cxk</span><span class="address1_name2 fr" style="text-align: right; margin-right: 20px;">13165423518</span></p><p class="address1_msg">山东省 青岛市 城阳区 青岛农业大学 西苑校区</p><span class="edit_address absolute">💻编辑</span><span class="del_address absolute">🗑删除</span></div>'
+						'<div class="address1 fl relative"><p class="address1_name clearfix"><span class="address1_name_name fl" style="text-align: left; margin-left: 20px;">CHN</span><span class="address1_name_tel fr" style="text-align: right; margin-right: 20px;">13165423518</span></p><p class="address1_msg">山东省 青岛市 城阳区 青岛农业大学 西苑校区</p><span class="edit_address absolute">💻编辑</span><span class="del_address absolute">🗑删除</span></div>'
 					)
-					var newName = $(".bg_address1 .address_name").val()
-					var newTel = $(".bg_address1 .address_tel").val()
-					var newAddress = $(".bg_address1 .address_msg").val()
-					$(".address1").find(".address1_name_name").text(newName)
-					$(".address1").find(".address1_name_tel").text(newTel)
-					$(".address1").find(".address1_msg").text(newAddress)
 					$($newAddress).insertBefore(".add_address")
+					// 输出
+					// var newName = $(this).siblings(".clearfix").find(".address_name").val()
+					// var newTel = $(".bg_address1 .address_tel").val()
+					// var newAddress = $(".bg_address1 .address_msg").val()
+					// $(".address1").find(".address1_name_name").text(newName)
+					// $(".address1").find(".address1_name_tel").text(newTel)
+					// $(".address1").find(".address1_msg").text(newAddress)
+					
 				}
 				$(".bg_address1").css("display", "none")
 			})
@@ -372,7 +374,7 @@
 				$(this).css("border-color", "darkred")
 				$(this).siblings().css("border-color", "lightgray")
 			})
-			$(".address1").on("click", ".edit_address", function() {
+			$(".address").on("click", ".edit_address", function() {
 				$(".bg_address2").css("display","block")
 				var name = $(this).siblings(".address1_name").children(".address1_name_name").text()
 				var tel =  $(this).siblings(".address1_name").children(".address1_name_tel").text()
@@ -380,20 +382,24 @@
 				$(".bg_address2 .address_name").val(name)
 				$(".bg_address2 .address_tel").val(tel)
 				$(".bg_address2 .address_msg").val(address)
+				var index = $(this).parents(".address1").index()
+				// console.log(index)
+				// 输出
+				$(".bg_address2 .address_box_enter").click(function() {
+					if ($(".bg_address2 .address_box label input") == "") {
+						alert("输入不能为空")
+					} else {
+						var newName = $(".bg_address2 .address_name").val()
+						var newTel = $(".bg_address2 .address_tel").val()
+						var newAddress = $(".bg_address2 .address_msg").val()
+						$(".address").eq(index - 1).find(".address1_name_name").text(newName)
+						$(".address").eq(index - 1).find(".address1_name_tel").text(newTel)
+						$(".address").eq(index - 1).find(".address1_msg").text(newAddress)
+					}
+					$(".bg_address2").css("display", "none")
+				})
 			})
-			$(".bg_address2 .address_box_enter").click(function() {
-				if ($(".address_box label input") == "") {
-					alert("输入不能为空")
-				} else {
-					var newName = $(".bg_address2 .address_name").val()
-					var newTel = $(".bg_address2 .address_tel").val()
-					var newAddress = $(".bg_address2 .address_msg").val()
-					$(".address1").find(".address1_name_name").text(newName)
-					$(".address1").find(".address1_name_tel").text(newTel)
-					$(".address1").find(".address1_msg").text(newAddress)
-				}
-				$(".bg_address2").css("display", "none")
-			})
+			
 		</script>
 	</body>
 </html>
