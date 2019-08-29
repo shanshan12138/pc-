@@ -10,54 +10,48 @@
 		<!-- 顶部nav -->
 		<div class="top_nav container clearfix">
 			<div class="left_nav fl relative">
-				<a href="">首页</a>
-				<a href="">华为官网</a>
-				<a href="">荣耀官网</a>
-				<a href="">花粉俱乐部</a>
-				<a href="">V码(优购码)</a>
-				<a href="">企业购</a>
-				<a href="">Select Region</a>
-				<span class="nav_more"><a href="">更多精彩 ∨</a>
-					<ul class="more_list absolute">
-						<li><a href="">EMUI</a></li>
-						<li><a href="">应用市场</a></li>
-						<li><a href="">华为终端云空间</a></li>
-						<li><a href="">开发者联盟</a></li>
-					</ul>
-				</span>
+				<a href="index.html">首页</a>
+				<a href="index.html">华为官网</a>
+				<a href="index.html">荣耀官网</a>
+				<a href="index.html">花粉俱乐部</a>
+				<a href="index.html">V码(优购码)</a>
+				<a href="index.html">企业购</a>
+				<a href="index.html">Select Region</a>
+				<a href="index.html">更多精彩>></a>
+					
 
 			</div>
 			<div class="right_nav fr">
-				<a href="" style="border: 0;">请登录</a>
-				<a href="">注册</a>
-				<a href="">我的订单</a>
-				<a href="">客户服务</a>
-				<a href="">网站导航</a>
+				<a href="login.html" style="border: 0;">请登录</a>
+				<a href="register.html">注册</a>
+				<a href="member-my-order.html">我的订单</a>
+				<a href="Member-Center .html">客户服务</a>
+				<a href="index.html">网站导航</a>
 				<a href="">手机版</a>
-				<a href="" style="border: 0;">
+				<a href="shopping-trolley.html" style="border: 0;">
 					<img style="height: 16px;width: 16px; vertical-align: middle;" src="img/index/Shopping_Cart_32px_1178620_easyicon.net.png">
-					<span class="ver_mid"></span>购物车
+					<span class="ver_mid">购物车</span>
 				</a>
 			</div>
 		</div>
 		<!-- Header -->
 		<div class="header clearfix container">
 			<div class="header_left fl clearfix">
-				<a href="" class="fl">
+				<a href="index.html" class="fl">
 					<div class="logo ver_mid"></div>
 				</a>
 				<div class="zone pink"><a href="zone.html" style="color: white;">华为专区</a></div>
-				<div class="zone sklBlue"><a href="http://127.0.0.1:8848/vmall.com/zone.html" style="color: white;">荣耀专区</a></div>
-				<div class="zone"><a href="http://127.0.0.1:8848/vmall.com/zone.html">华为5G</a></div>
-				<div class="zone"><a href="http://127.0.0.1:8848/vmall.com/zone.html">荣耀20</a></div>
-				<div class="zone"><a href="http://127.0.0.1:8848/vmall.com/zone.html">华为P30</a></div>
-				<div class="zone"><a href="http://127.0.0.1:8848/vmall.com/zone.html">荣耀9X</a></div>
+				<div class="zone sklBlue"><a href="zone.html" style="color: white;">荣耀专区</a></div>
+				<div class="zone"><a href="zone.html">华为5G</a></div>
+				<div class="zone"><a href="zone.html">荣耀20</a></div>
+				<div class="zone"><a href="zone.html">华为P30</a></div>
+				<div class="zone"><a href="zone.html">荣耀9X</a></div>
 			</div>
 			<div class="header_right fr">
 				<!-- 搜索框待定 -->
 				<form class="header_form clearfix relative">
 					<input class="fl " type="text" name="" id="search_box" value="" placeholder="HUAWEI P30" />
-					<span id="search_btn"></span>
+					<a href="product-list.html"><span id="search_btn"></span></a>
 				</form>
 
 			</div>
@@ -65,9 +59,8 @@
 		<div class="container">
 			<!-- 面包屑 -->
 			<div class="breadcrumb-area">
-				<a href="index.html" title="首页">首页</a>
-				<a href="javascript:;">></a>
-				<span>手机</span>
+				<a href="index.html" title="首页">首页</a> <span> > </span><a href="product-list.html">手机</a>
+				
 			</div>
 			<div class="pro-content">
 				<div class="pro-cate">
@@ -563,10 +556,11 @@
 				<a href="" class="license fr"><img class="license fr" src="img/index/电子营业执照360.png"></a>
 			</div>
 		</div>
-		<script type="text/javascript" src="js/jquery-3.4.1.min.js">
-
-		</script>
+		<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
 		<script>
+			$(".pro-content .pro-panels").click(function () {
+				window.location.href = "details.html"
+			})
 			$('.pro-cate a').click(function() {
 				$(this).css("color", "#e01d20")
 				$(this).siblings('a').css("color", "#999")

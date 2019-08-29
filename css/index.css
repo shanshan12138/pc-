@@ -736,6 +736,7 @@ a:hover {
 	line-height: 38px;
 	background: rgba(0,0,0,0.1);
 	cursor: pointer;	
+	opacity: 0.5;
 }
 .returnTop .return{
 	opacity: 0;
