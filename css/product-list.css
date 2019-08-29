@@ -529,14 +529,8 @@ ul {
 	color: #CA141D;
 }
 
-.next:hover,
-.last:hover {
+.pgNext:hover {
 	background-color: #666666;
 	color: white;
 	cursor: pointer;
-}
-
-.first,
-.pre {
-	cursor: default;
 }

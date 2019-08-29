@@ -26,7 +26,7 @@
 				<a href="">企业购</a>
 				<a href="">Select Region</a>
 				<a href="">更多精彩>></a>
-				
+
 
 			</div>
 			<div class="right_nav fr">
@@ -85,8 +85,10 @@
 				</ul>
 			</div>
 
-			<a class="prev" href="javascript:void(0)" style="font-size: 30px;color: lightgray;line-height: 44px;text-align: center;opacity: 0.4;"> ◁ </a>
-			<a class="next" href="javascript:void(0)" style="font-size: 30px;color: lightgray;line-height: 44px;text-align: center;opacity: 0.4;"> ▷ </a>
+			<a class="prev" href="javascript:void(0)" style="font-size: 30px;color: lightgray;line-height: 44px;text-align: center;opacity: 0.4;">
+				◁ </a>
+			<a class="next" href="javascript:void(0)" style="font-size: 30px;color: lightgray;line-height: 44px;text-align: center;opacity: 0.4;">
+				▷ </a>
 			<div class="category">
 				<ul class="category_list">
 					<li class="category_item">
@@ -563,7 +565,9 @@
 				热销单品
 			</div>
 			<div class="hot_left fl">
-				<img src="img/index/ia_100000077.jpg">
+				<a href="details.html">
+					<img src="img/index/ia_100000077.jpg">
+				</a>
 			</div>
 			<ul class="hot_right fl clearfix">
 				<li class="fl relative">
@@ -1782,6 +1786,12 @@
 			$("html,body").animate({
 				scrollTop: top
 			})
+		})
+		$(".tel_list li").click(function() {
+			window.location.href = "details.html"
+		})
+		$(".hot_right li").click(function() {
+			window.location.href = "details.html"
 		})
 	</script>
 </html>
