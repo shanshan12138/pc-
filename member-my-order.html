@@ -7,6 +7,63 @@
 		<link rel="stylesheet" type="text/css" href="css/reset.css" />
 	</head>
 	<body>
+		<!-- 顶部nav -->
+		<div class="top_nav_outbox">
+			<div class="top_nav container clearfix">
+				<div class="left_nav fl relative">
+					<a href="index.html">首页</a>
+					<a href="">华为官网</a>
+					<a href="">荣耀官网</a>
+					<a href="">花粉俱乐部</a>
+					<a href="">V码(优购码)</a>
+					<a href="">企业购</a>
+					<a href="">Select Region</a>
+					<a href="">更多精彩>></a>
+			
+			
+				</div>
+				<div class="right_nav fr">
+					<a href="login.html" style="border: 0;">请登录</a>
+					<a href="register.html">注册</a>
+					<a href="member-my-order.html">我的订单</a>
+					<a href="">客户服务</a>
+					<a href="">网站导航</a>
+					<a href="">手机版</a>
+					<a href="shopping-trolley.html" style="border: 0;">
+						<img style="height: 16px; vertical-align: middle;" src="img/index/Shopping_Cart_32px_1178620_easyicon.net.png">
+						<span class="ver_mid"></span>购物车
+					</a>
+				</div>
+			</div>
+			
+		</div>
+		<!-- Header -->
+		<div class="header-outbox">
+			<!-- Header -->
+			<div class="header clearfix container">
+				<div class="header_left fl clearfix">
+					<a href="" class="fl">
+						<div class="logo ver_mid"></div>
+					</a>
+					<div class="zone pink"><a href="zone.html" style="color: white;">华为专区</a></div>
+					<div class="zone sklBlue"><a href="zone.html" style="color: white;">荣耀专区</a></div>
+					<div class="zone"><a href="zone.html">华为5G</a></div>
+					<div class="zone"><a href="zone.html">荣耀20</a></div>
+					<div class="zone"><a href="zone.html">华为P30</a></div>
+					<div class="zone"><a href="zone.html">荣耀9X</a></div>
+				</div>
+				<div class="header_right fr">
+					<!-- 搜索框待定 -->
+					<form class="header_form clearfix relative">
+						<input class="fl " type="text" name="" id="search_box" value="" placeholder="HUAWEI P30" />
+						<a href="product-list.html"><span id="search_btn"></span></a>
+					</form>
+			
+				</div>
+			</div>
+			
+		</div>
+		
 		<div class="Member_contanier">
 			<!-- 面包屑 -->
 			<div class="breadcrumb-area">
@@ -24,7 +81,6 @@
 			</div>
 
 			<div class="Member_content">
-				<!-- 左边菜单 -->
 				<!-- 左边菜单 -->
 				<div class="Left_MyShop fl">
 					<div class="Left_MyShop fl">
@@ -230,13 +286,13 @@
 							<div class="ec-tab" id="ec-tab">
 								<ul>
 									<li class="current fl">
-										<a href="javascript:;" onclick="ec.member.orderList.seltime(this,1);">
+										<a href="member-my-order.html">
 											<span>最近六月内订单
 												<em id="count-seltime-0">1</em>
 											</span>
 										</a>
 									</li>
-									<li class="fl"><a href="javascript:;" onclick="ec.member.orderList.seltime(this,0);"><span>六个月前订单<em id="count-seltime-1"
+									<li class="fl"><a href="member-my-order.html"><span>六个月前订单<em id="count-seltime-1"
 												 style="display: none;">0</em></span></a></li>
 									<div class="clear"></div>
 								</ul>
@@ -249,9 +305,9 @@
 					<!-- tab选项卡全部有效订单 -->
 					<div class="myOrder-cate" id="myOrder-cate">
 						<ul>
-							<li class="current"><a href="javascript:;" <span>全部有效订单<em></em></span></a></li>
+							<li class="current"><a href="member-my-order.html" <span>全部有效订单<em></em></span></a></li>
 							<li>
-								<a href="javascript:;">
+								<a href="member-my-order.html">
 									<span>
 										待支付
 										<em id="count-seltime-2" data-num="1">
@@ -266,10 +322,10 @@
 							<em id="" style="display:none">
 								0
 							</em>
-							<li><a href="javascript:;"><span>待评价<em id="" data-num="0" data-his="0" style="display: none;">0</em></span></a></li>
-							<li><a href="javascript:;"><span>待收货<em id="" class="hide" data-num="0">0</em></span></a></li>
-							<li><a href="javascript:;"><span>已完成</span></a></li>
-							<li><a href="javascript:;"><span>已取消</span></a></li>
+							<li><a href="member-my-order.html"><span>待评价<em id="" data-num="0" data-his="0" style="display: none;">0</em></span></a></li>
+							<li><a href="member-my-order.html"><span>待收货<em id="" class="hide" data-num="0">0</em></span></a></li>
+							<li><a href="member-my-order.html"><span>已完成</span></a></li>
+							<li><a href="member-my-order.html"><span>已取消</span></a></li>
 						</ul>
 					</div>
 
@@ -298,8 +354,7 @@
 										<input type="checkbox" class="checkbox" name="payCheck" value="11450319926" paymentstatus="2" clearorder="false">
 										<!-- 奖品订单 -->
 										<span class="o-date">2019-08-27&nbsp;&nbsp;17:56</span>
-										<span class="o-no">订单号：<a onclick="ec.postTo('/member/order/detail', {orderCode:'11450319926'});" href="javascript:;"
-											 title="11450319926">11450319926</a></span>
+										<span class="o-no">订单号：<a href="nowConfirmCard.html" title="11450319926">11450319926</a></span>
 									</div>
 									<div class="col-state">
 										订单已确认&nbsp;|&nbsp;
@@ -313,7 +368,7 @@
 											<tr>
 												<td class="col-pro-img">
 													<p class="p-img">
-														<a title="HUAWEI nova 5 8GB+128GB 全网通版（仲夏紫）" href="#" target="_blank">
+														<a title="HUAWEI nova 5 8GB+128GB 全网通版（仲夏紫）" href="details.html" target="_blank">
 															<img alt="HUAWEI nova 5 8GB+128GB 全网通版（仲夏紫）" src="img/member-center/myorder.png">
 														</a>
 													</p>
@@ -342,11 +397,11 @@
 																立即支付
 															</span>
 														</a></p>
-													<p class="p-link"><a href="javascript:;" >修改订单</a></p>
+													<p class="p-link"><a href="nowConfirmCard.html" >修改订单</a></p>
 
 
-													<p class="p-link"><a href="javascript:;" data-ordercode="11450319926" ">取消订单</a></p>
-													<p class="p-link"><a  href="javascript:;">订单详情</a></p>
+													<p class="p-link"><a href="nowConfirmCard.html" data-ordercode="11450319926" ">取消订单</a></p>
+													<p class="p-link"><a  href="nowConfirmCard.html">订单详情</a></p>
 												</td>
 
 											</tr>
@@ -386,7 +441,7 @@
 								<input type="checkbox" class="checkbox" id="" name=""><span>全选</span>
 								
 							</label>
-							<a href="javascript:;" class="button-operate-merge-pay" id="" ><span>合并支付</span></a>
+							<a href="nowConfirmCard.html" class="button-operate-merge-pay" id="" ><span>合并支付</span></a>
 						</div>
 						<div class="list-group-page">
 							<div class="pager" id="list-pager"></div>
@@ -399,6 +454,123 @@
 
 			</div>
 			<div class="bottom-hr"></div>
+		</div>
+		<!-- footer -->
+		<div class="footer-outbox">
+			<!-- 以下为footer -->
+			<div class="footer">
+				<div class="footer_top container clearfix">
+					<div class="top_item fl">
+						<a href="">
+							<span class="ver_mid">百强企业 品质保证</span>
+						</a>
+					</div>
+					<div class="top_item fl">
+						<a href="">
+							<span class="ver_mid">7天退货 15天换货</span>
+						</a>
+					</div>
+					<div class="top_item fl">
+						<a href="">
+							<span class="ver_mid">48元起免运费</span>
+						</a>
+					</div>
+					<div class="top_item fl">
+						<a href="">
+							<span class="ver_mid">1000家维修网点 全国联保</span>
+						</a>
+					</div>
+				</div>
+				<div class="footer_mid container clearfix">
+					<div class="mid_left fl">
+						<ul class="clearfix" style="border-right: 1px solid lightgray;">
+							<li>
+								<p>购物相关</p>
+								<a href="">购物指南</a>
+								<a href="">配送方式</a>
+								<a href="">支付方式</a>
+								<a href="">常见问题</a>
+							</li>
+							<li>
+								<p>保修与退换货</p>
+								<a href="">保修政策</a>
+								<a href="">退换货政策</a>
+								<a href="">退换货流程</a>
+								<a href="">保修状态查询</a>
+								<a href="">配件方位查询</a>
+							</li>
+							<li>
+								<p>维修与技术支持</p>
+								<a href="">售后网点</a>
+								<a href="">预约维修</a>
+								<a href="">手机寄修</a>
+								<a href="">备件价格查询</a>
+								<a href="">上门服务</a>
+							</li>
+							<li>
+								<p>特色服务</p>
+								<a href="">防伪查询</a>
+								<a href="">补够保障</a>
+								<a href="">以旧换新</a>
+								<a href="">礼包包装</a>
+							</li>
+							<li>
+								<p>关于我们</p>
+								<a href="">公司介绍</a>
+								<a href="">华为商城简介</a>
+								<a href="">华为线下门店</a>
+								<a href="">荣耀线下门店</a>
+								<a href="">诚征英才</a>
+								<a href="">意见反馈</a>
+							</li>
+							<li>
+								<p>友情连接</p>
+								<a href="">华为集团</a>
+								<a href="">华为CBG官网</a>
+								<a href="">荣耀官网</a>
+								<a href="">花粉俱乐部</a>
+								<a href="">华为云</a>
+							</li>
+						</ul>
+		
+					</div>
+					<div class="mid_right fl">
+						<p class="footer_mid_tel">400-088-6888</p>
+						<p class="footer_mid_serve">7x24小时客服热线（仅收市话费）</p>
+						<a class="online_serve" href="">在线客服</a>
+						<div class="link_more">
+							<span>关注Vmall:</span>
+						</div>
+					</div>
+				</div>
+				<div class="footer_end container clearfix">
+					<img class="footer_end_left fl" src="img/index/footerk.png">
+					<div class="footer_end_mid fl">
+						<ul>
+							<li style="padding-left: 0;"><a href="">华为集团</a></li>
+							<li><a href="">华为CBG官网</a></li>
+							<li><a href="">荣耀官网</a></li>
+							<li><a href="">花粉俱乐部</a></li>
+							<li><a href="">华为应用市场</a></li>
+							<li><a href="">EMUI</a></li>
+							<li><a href="">华为终端云空间</a></li>
+							<li><a href="">开发者联盟</a></li>
+							<li><a href="">华为商城手机版</a></li>
+							<li style="border: none;"><a href="">网站导航</a></li>
+						</ul>
+						<br>
+						<a href="">隐私声明</a>
+						<a href="">服务协议</a>
+						Copyright © 2012-2019 华为终端有限公司 版权所有
+						<a href="">粤ICP备19015064号</a>
+						<a href="">粤公网安备 44190002003939号</a><br>
+						增值电信业务经营许可证：粤B2-20190762 <span> | </span> 备案主体编号：44201919072182
+		
+					</div>
+					<a href="" class="license fr"><img src="img/index/隐私认证75.jpg"></a>
+					<a href="" class="license fr"><img class="license fr" src="img/index/电子营业执照360.png"></a>
+				</div>
+			</div>
 		</div>
 
 	</body>
