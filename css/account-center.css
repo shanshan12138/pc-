@@ -2,6 +2,47 @@
 	background-color: #333333;
 }
 
+.borderclass .layui-layer-btn0,
+.borderclass .layui-layer-btn1 {
+	/* float: left;
+	width: 165px;
+	height: 40px;
+	line-height: 40px;
+	font-size: 15px;
+	display: block;
+	text-align: center;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	color: #007dff;
+	background-color: #f7f7f7;
+	border-radius: 50px;
+	cursor: pointer; */
+
+}
+.layui-layer-content{
+	height: 155px;
+}
+ .borderclass .layui-layer-btn1{
+	 margin-left: 0px;
+ }
+ body .layui-layer-btn{
+	 padding-top: 0;;
+ }
+body .layui-layer .layui-layer-content{
+	 height: 160px;
+ }
+
+
+
+body .borderclass .layui-layer-title {
+	border-radius: 10px 10px 0 0;
+	border-bottom: 2px solid #F7F7F7;
+	background-color: white;
+}
+
+body .borderclass {
+	border-radius: 10px;
+}
+
 .clear {
 	clear: both;
 }
@@ -50,9 +91,11 @@
 	margin: 4px 0 0 11px;
 	color: #b7b7b7;
 }
-.topbar-content .right a .name:hover{
+
+.topbar-content .right a .name:hover {
 	color: white;
 }
+
 .topbar-content .right .exit {
 	color: white;
 	margin: 8px 0 0 10px;
@@ -206,15 +249,9 @@ body {
 	line-height: 19px;
 }
 
-body .borderclass {
-	border-radius: 10px;
-}
 
-body .borderclass .layui-layer-title {
-	border-radius: 10px 10px 0 0;
-	border-bottom: 2px solid #F7F7F7;
-	background-color: white;
-}
+
+
 
 
 /* 个人信息 */
@@ -363,20 +400,26 @@ body .borderclass .layui-layer-title {
 	margin-bottom: 10px;
 }
 }
-
-.setBorder {
-	border-bottom: 1px solid #e5e5e5;
+.pannel-title{
+	color: #000;
+    font-weight: bold;
+    font-size: 16px;
 }
 
 .ptitle2 {
 	padding-top: 20px;
+	color: #36383c;
+	font-size: 18px;
+	font-weight: bold;
+}
+.setBorder {
+	padding-top: 20px;
 	padding-bottom: 20px;
 	color: #36383c;
 	font-size: 18px;
-	font-weight: normal;
+	font-weight: bold;
 	border-bottom: 1px solid #e5e5e5;
 }
-
 .security-item {
 	width: 448px;
 	float: left;
@@ -420,6 +463,7 @@ body .borderclass .layui-layer-title {
 }
 
 .privacyDes {
+	font-weight: 500;
 	font-size: 14px;
 	margin-bottom: 6px;
 	color: #999;
@@ -436,24 +480,26 @@ body .borderclass .layui-layer-title {
 
 /* 底部 */
 .ft {
-    margin: 30px auto;
-    text-align: center;
-    font-size: 12px;
-    color: #999;
+	margin: 30px auto;
+	text-align: center;
+	font-size: 12px;
+	color: #999;
 	padding-bottom: 300px;
 }
+
 .ft p {
-    line-height: 24px;
+	line-height: 24px;
 }
+
 .ft p a {
-    font-size: 12px;
-    color: #999;
+	font-size: 12px;
+	color: #999;
 }
 
 .rule {
-    padding: 0 10px;
+	padding: 0 10px;
 }
 
 .foot_em {
-    font-size: 16px;
+	font-size: 16px;
 }

@@ -30,8 +30,8 @@
 
 				<div class="clear"></div>
 			</div>
-			
-			
+
+
 		</div>
 		<div class="account-container">
 			<div class="menu">
@@ -220,7 +220,7 @@
 			</div>
 
 		</div>
-		
+
 		<div class="wp ft">
 			<p>
 				<a href="#" class="rule" target="_blank">华为帐号用户协议</a>
@@ -234,7 +234,7 @@
 			<p>Copyright © 2011-2019 华为技术有限公司 版权所有 保留一切权利&nbsp;&nbsp;苏B2-20070200号 | 苏ICP备09062682号-9</p>
 			<p></p>
 		</div>
-		
+
 		</div>
 		<script type="text/javascript" src="js/jquery-3.4.1.min.js">
 
@@ -248,11 +248,15 @@
 			})
 			$(".completeInfo").click(function() {
 				layer.open({
+					skin: 'borderclass', //加上边框
 					type: 1,
 					title: ['身份验证', 'text-align: center;font-size: 18px;color: #333;padding: 20px 40px;'],
-					skin: 'borderclass', //加上边框
-					area: ['440px', '300px'], //宽高
-					content: '<div class="test" style="width: 440px; height: 200px;"><p style="font-size: 14px;color: #666;line-height: 18px; margin:10px 10px 0 10px;">为确认是您本人操作，请进行身份验证。</p><p style="font-size: 14px;color: #666;margin:10px 10px 8px 10px;">156******81</p><div class="message" style="padding: 0 16px;border-radius: 22px;min-height: 40px;background-color: #efefef;"><a href="#" class="fr" style="line-height: 38px;cursor: pointer;color: #007dff;text-decoration: none;">获取验证码</a><input class="" style="margin-right: 6px;height: 40px;overflow: hidden;width: 82%;border: 0;background-color: transparent;outline: 0;padding: 0;" type="tel" placeholder="短信验证码" /></div><div style="text-align: center; margin:0px auto;" ><span style="margin:10px 0; display: inline-block;">手机号无法使用？</span><a style="color: #007dff;text-decoration: none;">账户申诉</a></div><div><div class="fl" style="margin-left: 5px; width:40%;padding: 11.5px;font-size: 15px;display: block;text-align: center;border: 1px solid rgba(0,0,0,0.1);color: #007dff;background-color: #f7f7f7;border-radius: 50px;line-height: 1;cursor: pointer;" class="layer-cancel">取消</div><div class="fr" style="margin-right: 5px; width: 40%;padding: 11.5px;font-size: 15px;display: block;text-align: center;border: 1px solid rgba(0,0,0,0.1);color: #007dff;background-color: #f7f7f7;border-radius: 50px;line-height: 1;cursor: pointer;" class="layer-cancel">确定</div></div></div>'
+					area: ['440px', '280px'], //宽高
+					btn: ['确认', '取消'], //设置底部按钮
+					content: '<div class="test" style="width: 430px;"><p style="font-size: 14px;color: #666;line-height: 18px; margin:10px 10px 0 10px;">为确认是您本人操作，请进行身份验证。</p><p style="font-size: 14px;color: #666;margin:10px 10px 8px 10px;">156******81</p><div class="message" style="margin:0 6px;padding: 0 16px;border-radius: 22px;min-height: 40px;background-color: #efefef;"><a href="#" class="fr" style="line-height: 38px;cursor: pointer;color: #007dff;text-decoration: none;">获取验证码</a><input class="" style="margin-right: 6px;height: 40px;overflow: hidden;width: 82%;border: 0;background-color: transparent;outline: 0;padding: 0;" type="tel" placeholder="短信验证码" /></div><div style="text-align: center; margin:0px auto;" ><span style="margin:10px 0 0 0; display: inline-block;">手机号无法使用？</span><a style="color: #007dff;text-decoration: none;">账户申诉</a></div></div>'
+					// <div class="fl" style="margin-left: 5px; width:40%;padding: 11.5px;font-size: 15px;display: block;text-align: center;border: 1px solid rgba(0,0,0,0.1);color: #007dff;background-color: #f7f7f7;border-radius: 50px;line-height: 1;cursor: pointer;" class="layer-cancel">取消</div>
+					// <div class="fr" style="margin-right: 5px; width: 40%;padding: 11.5px;font-size: 15px;display: block;text-align: center;border: 1px solid rgba(0,0,0,0.1);color: #007dff;background-color: #f7f7f7;border-radius: 50px;line-height: 1;cursor: pointer;" class="layer-cancel">确定</div>
+
 				});
 			})
 		</script>
