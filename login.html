@@ -9,8 +9,10 @@
 	<body>
 		<div class="header">
 			<div class="header_box">
-				<img class="ver_mid" src="img/login/ia_100000001.png">
-				<span class="ver_mid">华为商城</span>
+				<a href="index.html">
+					<img class="ver_mid" src="img/login/ia_100000001.png">
+					<span class="ver_mid">华为商城</span>
+				</a>
 			</div>
 		</div>
 		<p class="law">
@@ -52,7 +54,7 @@
 						</div>
 						<div class="login_more">
 							<div class="register fl">
-								<a href="">注册账号</a>
+								<a href="register.html">注册账号</a>
 							</div>
 							<div class="returnPwd fl">
 								<a href="">找回密码</a>
@@ -84,7 +86,7 @@
 						<p></p>
 					</div>
 					<!-- 短信登录 -->
-					
+
 				</div>
 			</div>
 		</div>
@@ -101,43 +103,42 @@
 		</div>
 		<script src="js/jquery-3.4.1.min.js" type="text/javascript" charset="utf-8"></script>
 		<script type="text/javascript">
-			
-			$(".login_leftTitle").click(function () {
-				$("#login_form").css("display","block")
-				$(".login_code").css("display","none")
-				$(this).css("color","red")
-				$(this).siblings().css("color","black")
-				
+			$(".login_leftTitle").click(function() {
+				$("#login_form").css("display", "block")
+				$(".login_code").css("display", "none")
+				$(this).css("color", "red")
+				$(this).siblings().css("color", "black")
+
 			})
-			$(".login_rightTitle").click(function () {
-				$(".login_code").css("display","block")
-				$("#login_form").css("display","none")
-				$(this).css("color","red")
-				$(this).siblings().css("color","black")
+			$(".login_rightTitle").click(function() {
+				$(".login_code").css("display", "block")
+				$("#login_form").css("display", "none")
+				$(this).css("color", "red")
+				$(this).siblings().css("color", "black")
 			})
-			$(".code").mouseenter(function () {
+			$(".code").mouseenter(function() {
 				$(this).stop(true).animate({
-					left:"40px"
-				},function () {
+					left: "40px"
+				}, function() {
 					$(".code_ways").stop(true).animate({
-						opacity:1
+						opacity: 1
 					});
 				});
 			})
-			$(".code").mouseleave(function () {
+			$(".code").mouseleave(function() {
 				$(".code_ways").stop(true).animate({
-					opacity:0
+					opacity: 0
 				})
 				$(this).stop(true).delay(500).animate({
-					left:"115px"
+					left: "115px"
 				})
 			})
-			$(".login_btn").click(function () {
-				if( $("#userName").val() == "" ){
+			$(".login_btn").click(function() {
+				if ($("#userName").val() == "") {
 					$(".tips").text("请输入账号！")
 					return;
 				}
-				if( $("#passWord").val() == "" ){
+				if ($("#passWord").val() == "") {
 					$(".tips").text("请输入密码！")
 					return;
 				}
