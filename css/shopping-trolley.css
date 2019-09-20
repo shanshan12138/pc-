@@ -779,9 +779,9 @@ input[type="number"] {
 	cursor: pointer;
 }
 
-.mouseover:hover {
+/* .mouseover:hover {
 	display: block;
-}
+} */
 
 .list-content {
 	background-color: white;
